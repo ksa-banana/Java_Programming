@@ -18,3 +18,14 @@
   </ul>
   <hr>
 <h4>[과정]</h4>
+<ul>
+  <li>
+    <h5><a href="https://github.com/ksa-banana/C_Language/blob/master/Software_Design_And_Development_Process.md">소프트웨어 설계&개발</a></h5>
+  </li>
+  </ul>
+<h4>[팀 프로젝트]</h4>
+<ul>
+  <li>
+    <h5>공학용 계산기</h5>
+  </li>
+ </ul>
