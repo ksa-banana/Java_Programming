@@ -3,7 +3,7 @@
 <h4>[강사] 정대식 상명대 교수님</h4>
 <h4>[기업] 몽키소프트(MonkeySoft)</h4>
 <hr>
-<h4>[팀명] 바나나(Banana)</h4>
+<h4>[팀명] Banana </h4>
 <h4>[팀장] <a href = "https://github.com/kang-hana" > 강나래</a></h4>
   <h4>[팀원]</h4>
   <ul>
