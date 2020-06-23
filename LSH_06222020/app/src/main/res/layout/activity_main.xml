@@ -243,12 +243,12 @@
         app:layout_constraintWidth_percent="0.18"/>
 
     <Button
-        android:id="@+id/btn_reset"
+        android:id="@+id/btn_temp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="4dp"
         android:layout_marginBottom="4dp"
-        android:text="AC"
+        android:text="temp"
         app:layout_constraintBottom_toTopOf="@+id/btn_pow"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintWidth_percent="0.18" />
@@ -282,7 +282,7 @@
         android:layout_marginBottom="4dp"
         android:text="("
         app:layout_constraintBottom_toTopOf="@+id/btn_7"
-        app:layout_constraintLeft_toRightOf="@+id/btn_reset"
+        app:layout_constraintLeft_toRightOf="@+id/btn_temp"
         app:layout_constraintRight_toLeftOf="@+id/btn_right_parenthesis"
         app:layout_constraintWidth_percent="0.18" />
 
@@ -294,7 +294,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_reset"
+        app:layout_constraintBottom_toTopOf="@+id/btn_temp"
         app:layout_constraintTop_toBottomOf="@+id/sv"
         app:layout_constraintHeight_percent="0.3" />
 

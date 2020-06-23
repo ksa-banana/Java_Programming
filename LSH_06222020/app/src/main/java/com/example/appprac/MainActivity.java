@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     facPow funFac = new facPow();
-    Button factorial;
-    Button pow;
+    Button btn_factorial;
+    Button btn_pow;
     TextView tv;
     int value = 5;
     int value2 = 3;
@@ -20,18 +20,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        factorial=(Button) findViewById(R.id.factorial);
-        pow=(Button) findViewById(R.id.pow);
-        tv=(TextView) findViewById(R.id.tv);
+        btn_factorial=(Button) findViewById(R.id.btn_factorial);
+        btn_pow=(Button) findViewById(R.id.btn_pow);
+        tv=(TextView) findViewById(R.id.operExpression);
 
-        factorial.setOnClickListener(new View.OnClickListener() {
+        btn_factorial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tv.setText(String.valueOf(funFac.funcFactorial(value)));
             }
         });
 
-        pow.setOnClickListener(new View.OnClickListener(){
+        btn_pow.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 tv.setText(String.valueOf(funFac.funcPow(value, value2)));
