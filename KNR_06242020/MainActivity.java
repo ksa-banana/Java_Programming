@@ -3,6 +3,7 @@ package com.example.calc;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
@@ -29,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        //초기화
         init();
 
 
+        //버튼 리스너
         setNumListener(inputOutput);
         setOperationListener(inputOutput);
 
@@ -207,10 +210,10 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.btnEqual:
                         /** 아직 10개 이상 들어갈 경우 처리 안함**/
                         //초기값으로 + 줌 따로 초기화 할 수도 있고.
-                        inputOutput.inputOper("+");
                         result = inputOutput.intputEqual();
                         history[historyIndex] = operExpression + " = " + result;
                         operExpression = String.valueOf(result);
+
                         break;
                 }
 

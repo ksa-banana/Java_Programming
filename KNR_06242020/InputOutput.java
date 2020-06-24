@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class InputOutput {
 
     //필드
-    ArrayList<Double> num = new ArrayList<Double>();
+    ArrayList<Double> num = new ArrayList<>();
     Operation oper = new Operation();
 
     String s_num = "";
@@ -25,29 +25,35 @@ public class InputOutput {
 
 
     void inputOper(String op2){
-
-
         if(op1 == "+" || op1 == "-"){
+            //num1에 저장된 값을 arraylist에 저장
+            //num1에는 연산된 연산된 결과값
+            num.add(index, num1);
+            index++;
+            num1 = 0;
+
+            //
             num1 = Double.parseDouble(op1 + s_num);
             s_num = "";
 
-            if(op2 == "+" || op2 == "-"){
-                num.add(index, num1);
-                index++;
-            }
-
-
+            //아직 연산되지 않은 연산자
             this.op1 = op2;
+            Log.i("num list", num+"");
             Log.i("num1", num1+"");
             Log.i("num2", num2+"");
             Log.i("op1", op1);
-            Log.i("op2", op2);
         }
         else if(op1 == "*"){
             num2 = Double.parseDouble(s_num);
             s_num = "";
 
             num1 = oper.multiplication(num1, num2);
+
+            Log.i("num1", num1+"");
+            Log.i("num2", num2+"");
+            Log.i("op1", op1);
+
+            num2 = 0;
             this.op1 = op2;
         }
         else if(op1 == "/"){
@@ -55,6 +61,7 @@ public class InputOutput {
             s_num = "";
 
             num1 = oper.division(num1, num2);
+            num2 = 0;
             this.op1 = op2;
         }
         else if(op1 == "mod"){
@@ -62,6 +69,7 @@ public class InputOutput {
             s_num = "";
 
             num1 = oper.mod(num1, num2);
+            num2 = 0;
             this.op1 = op2;
         }
         else if (op1 == "pow"){
@@ -69,6 +77,8 @@ public class InputOutput {
             s_num = "";
 
             num1 = oper.involutionFunction(num1, num2);
+            num2 = 0;
+            this.op1 = op2;
         }
     }
 
@@ -78,6 +88,7 @@ public class InputOutput {
         s_num = "";
 
         num1 =oper.commonLogFunction(num2);
+        num2 = 0;
         op1 = "+";
     }
 
@@ -87,6 +98,7 @@ public class InputOutput {
         s_num = "";
 
         num1 = oper.expFunction(num2);
+        num2 = 0;
         op1 = "+";
     }
 
@@ -95,6 +107,7 @@ public class InputOutput {
         s_num = "";
 
         num1 = oper.factorialFunction(num2);
+        num2 = 0;
         op1 = "+";
     }
 
@@ -105,12 +118,24 @@ public class InputOutput {
         Log.i("num2", num2+"");
         Log.i("op1", op1);
 
-        s_num = String.valueOf(oper.sum(num));
+        //마지막 피연산자 연산
+        inputOper("+");
 
-        return Double.parseDouble(s_num);
+        //result 값
+        double sum = oper.sum(num);
+        inputNum(String.valueOf(sum));
+
+        clearArrayList(); //arrayList.clear() -> 객체를 비우고 삭제함.
+        index = 0;
+
+        return sum;
     }
 
 
+    void clearArrayList(){
+        num.clear();
+        num = new ArrayList<>();
+    }
 
 
 
