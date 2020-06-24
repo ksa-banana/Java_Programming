@@ -1,7 +1,7 @@
 package com.example.cal;
 
-public class reset {
-        public string resetData(string x){
+public class Reset {
+        public String resetData(String x){
 
         return x;
     }
