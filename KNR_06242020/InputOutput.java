@@ -60,9 +60,6 @@ public class InputOutput {
 
             num1 = oper.involutionFunction(num1, num2);
         }
-        else if (op1 == "="){
-
-        }
     }
 
 
@@ -92,9 +89,9 @@ public class InputOutput {
     }
 
 
-    void intputEqual(){
+    Double intputEqual(){
 
-        oper.sum(num);
+        return oper.sum(num);
     }
 
 
