@@ -1,5 +1,7 @@
 package com.example.calc;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 
 public class InputOutput {
@@ -8,7 +10,7 @@ public class InputOutput {
     ArrayList<Double> num = new ArrayList<Double>();
     Operation oper = new Operation();
 
-    String s_num = null;
+    String s_num = "";
     String op1 = "+";
     double num1, num2 = 0;
     int index = 0;
@@ -26,37 +28,45 @@ public class InputOutput {
 
 
         if(op1 == "+" || op1 == "-"){
-            num.set(index, num1);
-            index++;
-            num1 = Integer.parseInt(op1 + s_num);
-            s_num = null;
+            num1 = Double.parseDouble(op1 + s_num);
+            s_num = "";
+
+            if(op2 == "+" || op2 == "-"){
+                num.add(index, num1);
+                index++;
+            }
+
 
             this.op1 = op2;
+            Log.i("num1", num1+"");
+            Log.i("num2", num2+"");
+            Log.i("op1", op1);
+            Log.i("op2", op2);
         }
         else if(op1 == "*"){
-            num2 = Integer.parseInt(s_num);
-            s_num = null;
+            num2 = Double.parseDouble(s_num);
+            s_num = "";
 
             num1 = oper.multiplication(num1, num2);
             this.op1 = op2;
         }
         else if(op1 == "/"){
-            num2 = Integer.parseInt(s_num);
-            s_num = null;
+            num2 = Double.parseDouble(s_num);
+            s_num = "";
 
             num1 = oper.division(num1, num2);
             this.op1 = op2;
         }
         else if(op1 == "mod"){
-            num2 = Integer.parseInt(s_num);
-            s_num = null;
+            num2 = Double.parseDouble(s_num);
+            s_num = "";
 
             num1 = oper.mod(num1, num2);
             this.op1 = op2;
         }
         else if (op1 == "pow"){
-            num2 = Integer.parseInt(s_num);
-            s_num = null;
+            num2 = Double.parseDouble(s_num);
+            s_num = "";
 
             num1 = oper.involutionFunction(num1, num2);
         }
@@ -64,8 +74,8 @@ public class InputOutput {
 
 
     void inputLog(){
-        num2 = Integer.parseInt(s_num);
-        s_num = null;
+        num2 = Double.parseDouble(s_num);
+        s_num = "";
 
         num1 =oper.commonLogFunction(num2);
         op1 = "+";
@@ -73,8 +83,8 @@ public class InputOutput {
 
 
     void inputExp(){
-        num2 = Integer.parseInt(s_num);
-        s_num = null;
+        num2 = Double.parseDouble(s_num);
+        s_num = "";
 
         num1 = oper.expFunction(num2);
         op1 = "+";
@@ -82,16 +92,22 @@ public class InputOutput {
 
     void intputFactorial(){
         num2 = Integer.parseInt(s_num);
-        s_num = null;
+        s_num = "";
 
         num1 = oper.factorialFunction(num2);
         op1 = "+";
     }
 
 
-    Double intputEqual(){
+    double intputEqual(){
 
-        return oper.sum(num);
+        Log.i("num1", num1+"");
+        Log.i("num2", num2+"");
+        Log.i("op1", op1);
+
+        s_num = String.valueOf(oper.sum(num));
+
+        return Double.parseDouble(s_num);
     }
 
 

@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     Button btnReset, btnDel, btnLeftP, btnRightP, btnDot, btnEqual;
     Button btnPlus, btnMinus, btnMulti, btnDivision, btnLog, btnExp, btnMod, btnInvolution, btnFactorial;
-    TextView OperExpressionDisplay;
+    TextView operExpressionDisplay;
 
     String operExpression;
     String history[];
@@ -74,12 +74,12 @@ public class MainActivity extends AppCompatActivity {
         btnFactorial = (Button) findViewById(R.id.btnFactorial);
 
 
-        OperExpressionDisplay = (TextView) findViewById(R.id.operExpression);
+        operExpressionDisplay = (TextView) findViewById(R.id.operExpression);
 
 
 
         //변수 초기화
-        operExpression = null;
+        operExpression = "";
         history = new String[10];
         result = 0.0;
 
@@ -140,6 +140,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+
+
+                //operExpressionDisplay에 연산식 출력
+                operExpressionDisplay.setText(operExpression);
+
             }
         };
 
@@ -201,11 +206,18 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.btnEqual:
                         /** 아직 10개 이상 들어갈 경우 처리 안함**/
+                        //초기값으로 + 줌 따로 초기화 할 수도 있고.
+                        inputOutput.inputOper("+");
                         result = inputOutput.intputEqual();
                         history[historyIndex] = operExpression + " = " + result;
                         operExpression = String.valueOf(result);
                         break;
                 }
+
+
+                //operExpressionDisplay에 연산식 출력
+                operExpressionDisplay.setText(operExpression);
+
             }
         };
 
