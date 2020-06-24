@@ -4,7 +4,12 @@ public class facPow {
 
     public int funcFactorial(int value) {
 
-        if (value == 1){
+        if (value == 0) {
+
+            return 1;
+        }
+
+        else if (value == 1) {
 
             return value;
         }
