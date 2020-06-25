@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -19,11 +21,13 @@ public class MainActivity extends AppCompatActivity {
     TextView operExpressionDisplay;
 
     String operExpression;
-    String history[];
-    int historyIndex = 0;
+//    String history[];
+//    int historyIndex = 0;
     Double result;
+    int index;
 
-    final InputOutput inputOutput = new InputOutput();;
+    //final InputOutput inputOutput = new InputOutput();;
+    ArrayList<InputOutput> inputOutputs = new ArrayList<>();
 
 
     @Override
@@ -37,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //버튼 리스너
-        setNumListener(inputOutput);
-        setOperationListener(inputOutput);
+        setNumListener(inputOutputs);
+        setOperationListener(inputOutputs);
 
 
 
@@ -66,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         btnRightP = (Button) findViewById(R.id.btnRightParenthesis);
         btnDot = (Button) findViewById(R.id.btnDot);
         btnEqual = (Button) findViewById(R.id.btnEqual);
+        btnReset = (Button) findViewById(R.id.btnReset);
 
 
         btnPlus = (Button) findViewById(R.id.btnPlus);
@@ -85,14 +90,16 @@ public class MainActivity extends AppCompatActivity {
 
         //변수 초기화
         operExpression = "";
-        history = new String[10];
+        //history = new String[10];
         result = 0.0;
+        index = 0;
+        inputOutputs.add(index, new InputOutput());
 
     }
 
 
 
-    void setNumListener(final InputOutput inputOutput){
+    void setNumListener(final ArrayList<InputOutput> inputOutputs){
 
         //리스너 정의
         //숫자 버튼 눌렸을 때
@@ -104,43 +111,43 @@ public class MainActivity extends AppCompatActivity {
                 /**   id 상수값으로 코드 줄이는 방법 생각해보기   **/
                 switch (view.getId()){
                     case R.id.btn0:
-                        inputOutput.inputNum("0");
+                        inputOutputs.get(index).inputNum("0");
                         operExpression += "0";
                         break;
                     case R.id.btn1:
-                        inputOutput.inputNum("1");
+                        inputOutputs.get(index).inputNum("1");
                         operExpression += "1";
                         break;
                     case R.id.btn2:
-                        inputOutput.inputNum("2");
+                        inputOutputs.get(index).inputNum("2");
                         operExpression += "2";
                         break;
                     case R.id.btn3:
-                        inputOutput.inputNum("3");
+                        inputOutputs.get(index).inputNum("3");
                         operExpression += "3";
                         break;
                     case R.id.btn4:
-                        inputOutput.inputNum("4");
+                        inputOutputs.get(index).inputNum("4");
                         operExpression += "4";
                         break;
                     case R.id.btn5:
-                        inputOutput.inputNum("5");
+                        inputOutputs.get(index).inputNum("5");
                         operExpression += "5";
                         break;
                     case R.id.btn6:
-                        inputOutput.inputNum("6");
+                        inputOutputs.get(index).inputNum("6");
                         operExpression += "6";
                         break;
                     case R.id.btn7:
-                        inputOutput.inputNum("7");
+                        inputOutputs.get(index).inputNum("7");
                         operExpression += "7";
                         break;
                     case R.id.btn8:
-                        inputOutput.inputNum("8");
+                        inputOutputs.get(index).inputNum("8");
                         operExpression += "8";
                         break;
                     case R.id.btn9:
-                        inputOutput.inputNum("9");
+                        inputOutputs.get(index).inputNum("9");
                         operExpression += "9";
                         break;
 
@@ -167,53 +174,65 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    void setOperationListener(final InputOutput inputOutput){
+    void setOperationListener(final ArrayList<InputOutput> inputOutputs){
 
         View.OnClickListener OperationListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()){
                     case R.id.btnPlus:
-                        inputOutput.inputOper("+");
+                        inputOutputs.get(index).inputOper("+");
                         operExpression += "+";
                         break;
                     case R.id.btnMinus:
-                        inputOutput.inputOper("-");
+                        inputOutputs.get(index).inputOper("-");
                         operExpression += "-";
                         break;
                     case R.id.btnMulti:
-                        inputOutput.inputOper("*");
+                        inputOutputs.get(index).inputOper("*");
                         operExpression += "*";
                         break;
                     case R.id.btnDivision:
-                        inputOutput.inputOper("/");
+                        inputOutputs.get(index).inputOper("/");
                         operExpression += "/";
                         break;
                     case R.id.btnMod:
-                        inputOutput.inputOper("mod");
+                        inputOutputs.get(index).inputOper("mod");
                         operExpression += "mod";
                         break;
                     case R.id.btnInvolution:
-                        inputOutput.inputOper("pow");
+                        inputOutputs.get(index).inputOper("pow");
                         operExpression += "pow";
                         break;
                     case R.id.btnLog:
-                        inputOutput.inputOper("log");
+                        inputOutputs.get(index).inputOper("log");
                         operExpression += "log";
                         break;
                     case R.id.btnExp:
-                        inputOutput.inputOper("exp");
+                        inputOutputs.get(index).inputOper("exp");
                         operExpression += "exp";
                         break;
                     case R.id.btnFactorial:
-                        inputOutput.inputOper("factorial");
+                        inputOutputs.get(index).inputOper("factorial");
                         operExpression += "!";
+                        break;
+                    case R.id.btnLeftParenthesis:
+                        /** InputOutput 객체 새로 만들기 **/
+                        index++;
+                        inputOutputs.add(index, new InputOutput());
+
+                        break;
+                    case R.id.btnRightParenthesis:
+                        /** InputOutput 객체 없애기 **/
+                        inputOutputs.remove(index);
+                        index--;
+
                         break;
                     case R.id.btnEqual:
                         /** 아직 10개 이상 들어갈 경우 처리 안함**/
                         //초기값으로 + 줌 따로 초기화 할 수도 있고.
-                        result = inputOutput.intputEqual();
-                        history[historyIndex] = operExpression + " = " + result;
+                        result = inputOutputs.get(index).intputEqual();
+                        //history[historyIndex] = operExpression + " = " + result;
                         operExpression = String.valueOf(result);
                         break;
                     case R.id.btnReset:
@@ -240,15 +259,8 @@ public class MainActivity extends AppCompatActivity {
         btnFactorial.setOnClickListener(OperationListener);
         btnEqual.setOnClickListener(OperationListener);
         btnReset.setOnClickListener(OperationListener);
-
-
-    }
-
-
-    void setOperExpressionDisplay(){
-
-
-
+        btnLeftP.setOnClickListener(OperationListener);
+        btnRightP.setOnClickListener(OperationListener);
 
 
     }
