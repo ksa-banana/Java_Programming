@@ -11,12 +11,10 @@
 <h4> 1) 첫 번째: </h4>
 
 <h4> 2) 클래스 선언 및 생성 </h4>
-<h5></h5><br>
-
-<h4> 3) 기능(함수) </h4>
 <h5></h5>
-
-<h4> 4) </h4>
+<h4> 3) 레이아웃 </h4>
+<h5></h5>
+<h4> 4) 기능 (함수) </h4>
 <h4> 5) </h4>
 <h4> 6) </h4>
 <br>
@@ -26,155 +24,23 @@
 <h4> - 데이터 종류: 정수, 연산자</h4> 
 <h4> - 입력: 정수, 연산자</h4> 
 <br>
-<table>
- <tr>
-  <th>조장 여부</th>
-  <th>배정 기업</th> 
-  <th>이름</th>
-  <th>이메일</th>
-  <th>학교</th>
-  <th>전공</th>
-  </tr>
- 
- <tr>
-  <td>조장</td>
-  <td>A기업</td>
-  <td>김**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>컴퓨터공학</td> 
- </tr>
-  <tr>
-  <td></td>
-  <td>A기업</td>
-  <td>최**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>화학공학</td> 
- </tr>
- 
- <tr>
-  <td>조장</td>
-  <td>B기업</td>
-  <td>이**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>소프트웨어공학</td> 
- </tr>
- 
-  <tr>
-  <td></td>
-  <td>B기업</td>
-  <td>임**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>전자공학</td> 
- </tr>
- 
- <tr>
-  <td>조장</td>
-  <td>C기업</td>
-  <td>이**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>기계공학</td> 
- </tr>
-  <tr>
-  <td></td>
-  <td>C기업</td>
-  <td>박**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>정보통신공학</td> 
- </tr>
-  <tr>
-  <td></td>
-  <td>C기업</td>
-  <td>이**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>생명공학</td> 
- </tr>
-  <tr>
-  <td></td>
-  <td>C기업</td>
-  <td>고**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>컴퓨터시스템공학</td> 
- </tr>
- 
- <tr>
-  <td>조장</td>
-  <td>D기업</td>
-  <td>강**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>산업공학</td> 
- </tr>
- 
-  <tr>
-  <td></td>
-  <td>D기업</td>
-  <td>박**</td>
-  <td>***@email.com</td>
-  <td>**대학교</td>
-  <td>항공우주</td> 
- </tr>
-   </table>
-
 <br>
 <hr>
+
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <ul>
 <li>
-<h4>메인 함수 알고리즘 (main)</h4>
+<h4>알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/main_Function.png" width="20%" height="20%">
+<img src="" width="20%" height="20%">
   <li>
-<h4>메뉴 함수 알고리즘 (menu)</h4>
+<h4>알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/menu_Function.png" width="20%" height="20%">
+<img src="" width="20%" height="20%">
   <li>
-<h4>엑셀 파일 읽기 함수 알고리즘 (fileReading)</h4>
+<h4>알고리즘</h4>
  </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/fileReading_Function.png" width="20%" height="20%">
- <li>
-<h4>토큰 함수 알고리즘 (retToken)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/retToken_Function.png" width="30%" height="30%">
- <li>
-<h4>데이터 저장 함수 알고리즘 (inputData)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/inputData.png" width="30%" height="30%">
-  <li>
-<h4>데이터 검색 함수 알고리즘: 조장 검색 (searchingLeader)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingLeader_Function.png" width="30%" height="30%">
- <li>
-<h4>데이터 검색 함수 알고리즘: 기업 검색 (searchingCompany)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingCompany_Function.png" width="30%" height="30%">
-  <li>
-<h4>데이터 검색 함수 알고리즘: 이름 검색 (searchingName)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingName_Function.png" width="30%" height="30%">
-   <li>
-<h4>데이터 검색 함수 알고리즘: 이메일 검색 (searchingEmail)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingEmail_Function.png" width="30%" height="30%">
-    <li>
-<h4>데이터 검색 함수 알고리즘: 학교 검색 (searchingSchool)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingSchool_Function.png" width="30%" height="30%">
-  <li>
-<h4>데이터 검색 함수 알고리즘: 전공 검색 (serachingMajor)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingMajor_Function.png" width="30%" height="30%">
- <li>
-<h4>검색 기록 파일 쓰기 함수 알고리즘 (logFileWrithing)</h4>
- </li>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/fileWriting_Function.png" width="30%" height="30%">
+<img src="" width="20%" height="20%">
  </ul>
 <br>
 
@@ -183,17 +49,5 @@
 <h3> 5. 코딩 및 테스트 (Coding and Test) </h3>
 <ul>
  <li><h4>메뉴 출력화면</h4></li>
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/menu_view.PNG" width="50%" height="50%">
- <li><h4>조장 검색 출력화면</h4></li>
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingLeader_view.PNG" width="50%" height="50%">
- <li><h4>회사 검색 출력화면</h4></li>
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingCompany_view.PNG" width="50%" height="50%">
- <li><h4>이름 검색 출력화면</h4></li>
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingName_view.PNG" width="50%" height="50%">
- <li><h4>Email 검색 출력화면</h4></li>
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingEmail_view.PNG" width="50%" height="50%">
- <li><h4>학교 검색 출력화면</h4></li>
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingSchool_view.PNG" width="50%" height="50%">
- <li><h4>전공 검색 출력화면</h4></li>
-  <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/searchingMajor_view.PNG" width="50%" height="50%">
+  <img src="" width="50%" height="50%">
  </ul>
