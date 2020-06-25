@@ -2,14 +2,15 @@
 <h4>날짜: 2020.06.25 | 작성자: 김주연 | Version: 1.0 </h4>
 <hr>
 <h3> 1. 요구사항 분석 (Requirement Analysis) </h3>
-<h4>- 공학용 계산기</h4>
+<h4>- 공학용 계산기 구현</h4>
+<h4>- 안드로이드 애플리케이션으로 구현</h4>
 <br>
 <h3> 2. 구조 설계 (Structure Design)</h3>
-<img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/systemStructure.png" width="20%" height="20%">
-<h4> 1) 첫 번째 콘솔 입력창: 메뉴 생성 (조장 검색/기업 검색/이름 검색/이메일 검색/학교 검색/전공 검색)</h4>
+<img src="" width="20%" height="20%">
+<h4> 1) 첫 번째: </h4>
 
-<h4> 2) 구조체 선언 및 생성 </h4>
-<h5>- studentList: leader(조장 여부), company(회사), name(이름), email(이메일), school(학교), major(전공)</h5><br>
+<h4> 2) 클래스 선언 및 생성 </h4>
+<h5></h5><br>
 <table>
 <tr>
  <th>조장 여부</th>
