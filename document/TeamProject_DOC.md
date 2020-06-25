@@ -1,8 +1,8 @@
 ## [팀 프로젝트]
-<h4>날짜: 2020.05.20 | 작성자: 강나래 | Version: 1.1 </h4>
+<h4>날짜: 2020.06.25 | 작성자: 김주연 | Version: 1.0 </h4>
 <hr>
 <h3> 1. 요구사항 분석 (Requirement Analysis) </h3>
-<h4>- 데이터 파일 읽고 구조체에 저장, 데이터 검색, 검색 결과 파일 출력</h4>
+<h4>- 공학용 계산기</h4>
 <br>
 <h3> 2. 구조 설계 (Structure Design)</h3>
 <img src="https://github.com/ksa-banana/C_Language/blob/master/TeamProject_20200519/image/systemStructure.png" width="20%" height="20%">
