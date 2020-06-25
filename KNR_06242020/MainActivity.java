@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
+    //필드
     Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     Button btnReset, btnDel, btnLeftP, btnRightP, btnDot, btnEqual;
     Button btnPlus, btnMinus, btnMulti, btnDivision, btnLog, btnExp, btnMod, btnInvolution, btnFactorial;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Double result;
 
     final InputOutput inputOutput = new InputOutput();;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -196,15 +198,15 @@ public class MainActivity extends AppCompatActivity {
                         operExpression += "pow";
                         break;
                     case R.id.btnLog:
-                        inputOutput.inputLog();
+                        inputOutput.inputOper("log");
                         operExpression += "log";
                         break;
                     case R.id.btnExp:
-                        inputOutput.inputExp();
+                        inputOutput.inputOper("exp");
                         operExpression += "exp";
                         break;
                     case R.id.btnFactorial:
-                        inputOutput.intputFactorial();
+                        inputOutput.inputOper("factorial");
                         operExpression += "!";
                         break;
                     case R.id.btnEqual:
@@ -213,7 +215,9 @@ public class MainActivity extends AppCompatActivity {
                         result = inputOutput.intputEqual();
                         history[historyIndex] = operExpression + " = " + result;
                         operExpression = String.valueOf(result);
-
+                        break;
+                    case R.id.btnReset:
+                        operExpressionDisplay.setText("");
                         break;
                 }
 
@@ -235,6 +239,7 @@ public class MainActivity extends AppCompatActivity {
         btnExp.setOnClickListener(OperationListener);
         btnFactorial.setOnClickListener(OperationListener);
         btnEqual.setOnClickListener(OperationListener);
+        btnReset.setOnClickListener(OperationListener);
 
 
     }

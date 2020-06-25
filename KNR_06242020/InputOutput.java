@@ -32,94 +32,198 @@ public class InputOutput {
             index++;
             num1 = 0;
 
-            //
-            num1 = Double.parseDouble(op1 + s_num);
-            s_num = "";
+            /**
+             * 일항 연산자를 사용하면
+             * s_num에 값이 들어오지 않고
+             * num2는 0으로 패딩되어
+             * 연산 처리하지 않고 넘어감
+             **/
+            if(s_num != ""){
+                num1 = Double.parseDouble(op1 + s_num);
+                s_num = "";
+            }
+
 
             //아직 연산되지 않은 연산자
-            this.op1 = op2;
+            op1 = op2;
             Log.i("num list", num+"");
+            Log.i("op1", op1);
             Log.i("num1", num1+"");
             Log.i("num2", num2+"");
-            Log.i("op1", op1);
+
         }
         else if(op1 == "*"){
-            num2 = Double.parseDouble(s_num);
-            s_num = "";
 
-            num1 = oper.multiplication(num1, num2);
+            /**
+             * 일항 연산자를 사용하면
+             * s_num에 값이 들어오지 않고
+             * num2는 0으로 패딩되어
+             * 연산 처리하지 않고 넘어감
+             **/
+            if(s_num != ""){
+                num2 = Double.parseDouble(s_num);
+                s_num = "";
+            }
+            if(num2 != 0){
+                num1 = oper.multiplication(num1, num2);
+                num2 = 0;
+            }
 
+            op1 = op2;
+
+            Log.i("num list", num+"");
+            Log.i("op1", op1);
             Log.i("num1", num1+"");
             Log.i("num2", num2+"");
-            Log.i("op1", op1);
 
-            num2 = 0;
-            this.op1 = op2;
         }
         else if(op1 == "/"){
-            num2 = Double.parseDouble(s_num);
-            s_num = "";
 
-            num1 = oper.division(num1, num2);
-            num2 = 0;
-            this.op1 = op2;
+
+            /**
+             * 일항 연산자를 사용하면
+             * s_num에 값이 들어오지 않고
+             * num2는 0으로 패딩되어
+             * 연산 처리하지 않고 넘어감
+             **/
+            if(s_num != ""){
+                num2 = Double.parseDouble(s_num);
+                s_num = "";
+            }
+
+
+            if (num2 != 0){
+                num1 = oper.division(num1, num2);
+                num2 = 0;
+            }
+
+            op1 = op2;
+
+
+            Log.i("num list", num+"");
+            Log.i("op1", op1);
+            Log.i("num1", num1+"");
+            Log.i("num2", num2+"");
+
         }
         else if(op1 == "mod"){
-            num2 = Double.parseDouble(s_num);
-            s_num = "";
 
-            num1 = oper.mod(num1, num2);
-            num2 = 0;
-            this.op1 = op2;
+
+            /**
+             * 일항 연산자를 사용하면
+             * s_num에 값이 들어오지 않고
+             * num2는 0으로 패딩되어
+             * 연산 처리하지 않고 넘어감
+             **/
+            if(s_num != ""){
+                num2 = Double.parseDouble(s_num);
+                s_num = "";
+            }
+
+
+            if (num2 != 0){
+                num1 = oper.mod(num1, num2);
+                num2 = 0;
+            }
+
+            op1 = op2;
         }
         else if (op1 == "pow"){
-            num2 = Double.parseDouble(s_num);
-            s_num = "";
 
-            num1 = oper.involutionFunction(num1, num2);
-            num2 = 0;
-            this.op1 = op2;
+
+            /**
+             * 일항 연산자를 사용하면
+             * s_num에 값이 들어오지 않고
+             * num2는 0으로 패딩되어
+             * 연산 처리하지 않고 넘어감
+             **/
+            if(s_num != ""){
+                num2 = Double.parseDouble(s_num);
+                s_num = "";
+            }
+            if(num2 != 0){
+                num1 = oper.involutionFunction(num1, num2);
+                num2 = 0;
+            }
+
+            op1 = op2;
         }
+        else if (op1 == "log"){
+
+            /** log 연산자 앞에 이항 연산자가 없는 경우**/
+            if (s_num != ""){
+                num1 = Double.parseDouble(s_num);
+                s_num = "";
+            }
+
+            num1 =oper.commonLogFunction(num1);
+            num2 = 0;
+
+            op1 = op2;
+
+            Log.i("num list", num+"");
+            Log.i("op1", op1);
+            Log.i("num1", num1+"");
+            Log.i("num2", num2+"");
+
+        }
+        else if(op1 == "exp"){
+
+            /** log 연산자 앞에 이항 연산자가 없는 경우**/
+            if (s_num != ""){
+                num1 = Double.parseDouble(s_num);
+                s_num = "";
+            }
+
+            num1 =oper.expFunction(num1);
+            num2 = 0;
+
+            op1 = op2;
+
+            Log.i("num list", num+"");
+            Log.i("op1", op1);
+            Log.i("num1", num1+"");
+            Log.i("num2", num2+"");
+
+        }
+        else if (op1 == "factorial"){
+            /** log 연산자 앞에 이항 연산자가 없는 경우**/
+            if (s_num != ""){
+                num1 = Double.parseDouble(s_num);
+                s_num = "";
+            }
+
+            num1 =oper.factorialFunction(num1);
+            num2 = 0;
+
+            op1 = op2;
+
+            Log.i("num list", num+"");
+            Log.i("op1", op1);
+            Log.i("num1", num1+"");
+            Log.i("num2", num2+"");
+        }
+
     }
-
-
-    void inputLog(){
-        num2 = Double.parseDouble(s_num);
-        s_num = "";
-
-        num1 =oper.commonLogFunction(num2);
-        num2 = 0;
-        op1 = "+";
-    }
-
-
-    void inputExp(){
-        num2 = Double.parseDouble(s_num);
-        s_num = "";
-
-        num1 = oper.expFunction(num2);
-        num2 = 0;
-        op1 = "+";
-    }
-
-    void intputFactorial(){
-        num2 = Integer.parseInt(s_num);
-        s_num = "";
-
-        num1 = oper.factorialFunction(num2);
-        num2 = 0;
-        op1 = "+";
-    }
-
 
     double intputEqual(){
 
-        Log.i("num1", num1+"");
-        Log.i("num2", num2+"");
-        Log.i("op1", op1);
 
         //마지막 피연산자 연산
-        inputOper("+");
+        inputOper("");
+
+
+        Log.i("=========", "최종 연산 전========");
+        Log.i("num list", num+"");
+        Log.i("op1", op1);
+        Log.i("num1", num1+"");
+        Log.i("num2", num2+"");
+
+
+        /** 마지막 연산 결과값 리스트에 저장 **/
+        num.add(index, num1);
+        index++;
+        num1 = 0;
 
         //result 값
         double sum = oper.sum(num);
@@ -127,6 +231,14 @@ public class InputOutput {
 
         clearArrayList(); //arrayList.clear() -> 객체를 비우고 삭제함.
         index = 0;
+
+
+        Log.i("=========", "최종 연산 후========");
+        Log.i("num list", num+"");
+        Log.i("op1", op1);
+        Log.i("num1", num1+"");
+        Log.i("num2", num2+"");
+
 
         return sum;
     }
