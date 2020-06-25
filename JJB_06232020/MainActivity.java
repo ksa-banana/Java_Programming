@@ -1,10 +1,12 @@
-package com.example.calc;
+package com.example.cal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -14,17 +16,18 @@ public class MainActivity extends AppCompatActivity {
     Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     Button btnReset, btnDel, btnLeftP, btnRightP, btnDot, btnEqual;
     Button btnPlus, btnMinus, btnMulti, btnDivision, btnLog, btnExp, btnMod, btnInvolution, btnFactorial;
-    TextView OperExpressionDisplay, HistoryDisplay;
+    TextView operExpressionDisplay, historyDisplay;
+    ScrollView sv;
 
     String operExpression;
-    String history[];
+//    String history[];
     int historyIndex = 0;
     Double result;
     String history_data = null;
+    String result_data;
 
     // history, reset 객체생성
     History history = new History();
-    Reset reset = new Reset();
 
     final InputOutput inputOutput = new InputOutput();;
 
@@ -34,9 +37,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        //초기화
         init();
 
 
+        //버튼 리스너
         setNumListener(inputOutput);
         setOperationListener(inputOutput);
 
@@ -59,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         btn8 = (Button) findViewById(R.id.btn8);
         btn9 = (Button) findViewById(R.id.btn9);
 
-
         btnReset = (Button) findViewById(R.id.btnReset);
         btnDel = (Button) findViewById(R.id.btnDel);
         btnLeftP = (Button) findViewById(R.id.btnLeftParenthesis);
@@ -79,18 +83,17 @@ public class MainActivity extends AppCompatActivity {
         btnFactorial = (Button) findViewById(R.id.btnFactorial);
 
 
-        OperExpressionDisplay = (TextView) findViewById(R.id.operExpression);
-        HistoryDisplay = (TextView) findViewById(R.id.history);
-
+        operExpressionDisplay = (TextView) findViewById(R.id.operExpression);
+        historyDisplay = (TextView) findViewById(R.id.history);
+        sv = (ScrollView) findViewById(R.id.sv);
 
 
         //변수 초기화
-        operExpression = null;
-        history = new String[10];
+        operExpression = "";
+//        history = new String[10];
         result = 0.0;
 
     }
-
 
 
     void setNumListener(final InputOutput inputOutput){
@@ -146,6 +149,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+
+
+                //operExpressionDisplay에 연산식 출력
+                operExpressionDisplay.setText(operExpression);
+
             }
         };
 
@@ -205,20 +213,29 @@ public class MainActivity extends AppCompatActivity {
                         inputOutput.intputFactorial();
                         operExpression += "!";
                         break;
+
                     case R.id.btnEqual:
                         /** 아직 10개 이상 들어갈 경우 처리 안함**/
                         result = inputOutput.intputEqual();
-                        history[historyIndex] = operExpression + " = " + result;
+//                        history[historyIndex] = operExpression + " = " + result;
+                        //show history
+                        result_data = operExpression + " = " + result;
                         operExpression = String.valueOf(result);
-                        //showhistory
-                        history_data = history.showHistory(x);
-                        HistoryDisplay.setText(history_data);
+                        history_data = history.showHistory(result_data);
+                        historyDisplay.append(history_data);
+                        sv.fullScroll(View.FOCUS_DOWN);
                         break;
+
                     case R.id.btnReset:
-                        operExpression = null;
-                        OperExpressionDisplay.setText(operExpression);
+                        operExpression = "";
+                        operExpressionDisplay.setText(operExpression);
                         break;
                 }
+
+
+                //operExpressionDisplay에 연산식 출력
+                operExpressionDisplay.setText(operExpression);
+
             }
         };
 
@@ -233,10 +250,10 @@ public class MainActivity extends AppCompatActivity {
         btnExp.setOnClickListener(OperationListener);
         btnFactorial.setOnClickListener(OperationListener);
         btnEqual.setOnClickListener(OperationListener);
+        btnReset.setOnClickListener(OperationListener);
 
 
     }
-
 
     void setOperExpressionDisplay(){
 
@@ -245,6 +262,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
+
+
+
 
 
 
