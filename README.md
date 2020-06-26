@@ -36,9 +36,6 @@
       <li>
     <h5>프로젝트 기간: 2020.06.17~2020.06.30 (총 14일)</h5>
       </li>
-      <li>
-        <h5>팀명: Banana/ 팀장: 강나래</h5>
-      </li>
      <li>
     <h5>역할 분담</h5>
       </li>
@@ -48,19 +45,19 @@
     <td align=center><h5>역할</h5></td>
   </tr>
   <tr>
-    <td align=center><h5>강나래</h5></td>
+    <td align=center><h6>강나래</h6></td>
     <td><h5>프로젝트 다이어그램 구상/ 안드로이드 layout 구현/ 프로그램 MainActivity 알고리즘 구현/ 데이터 입력 알고리즘 구현/ 데이터 우선순위 알고리즘 구현</h5> </td>
   </tr>
    <tr>
-    <td align=center><h5>김주연</h5></td>
+    <td align=center><h6>김주연</h6></td>
     <td><h5>프로젝트 다이어그램 구상/ 데이터 연산(사칙연산, 나머지연산, 상용로그함수, e지수함수 기능) 알고리즘 구현/ 프로젝트 문서화</h5> </td>
   </tr>
    <tr>
-    <td align=center><h5>임성환</h5></td>
+    <td align=center><h6>임성환</h6></td>
     <td><h5>프로젝트 다이어그램 구상/ 데이터 연산(거듭제곱 연산, 팩토리얼 연산 기능) 알고리즘 구현/ 프로그램 MainActivity 알고리즘 수정</h5> </td>
   </tr>
    <tr>
-    <td align=center><h5>정주비</h5></td>
+    <td align=center><h6>정주비</h6></td>
     <td><h5>데이터 저장(히스토리 기능) 알고리즘 구현/ 데이터 출력 초기화(리셋 기능) 구현/ 프로그램 MainActivity 알고리즘 수정</h5></td>
   </tr>
   </table>
