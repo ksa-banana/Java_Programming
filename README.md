@@ -43,12 +43,12 @@
       </li>
     <table>
   <tr>
-    <td align=center>이름</td> 
-    <td align=center>역할</td>
+    <td align=center><h5>이름</h5></td> 
+    <td align=center><h5>역할</h5></td>
   </tr>
   <tr>
-    <td align=center>강나래</td>
-    <td align=center>프로젝트 다이어그램 구상 / 안드로이드 layout 구현/ 데이터 입력과 전처리 알고리즘 구현 </td>
+    <td align=center><h5>강나래</h5></td>
+    <td align=center><h5>프로젝트 다이어그램 구상 / 안드로이드 layout 구현/ 데이터 입력과 전처리 알고리즘 구현</h5> </td>
   </tr>
         <tr>
     <td align=center>김주연</td>
