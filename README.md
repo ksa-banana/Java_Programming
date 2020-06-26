@@ -41,9 +41,6 @@
       </li>
        <table>
   <tr>
-  <th colspan = "6" align=center>프로젝트 주제: 공학용 계산기</th>
-  </tr>
-  <tr>
     <td align=center>이름</td> <td align=center>역할</td>
   </tr>
   <tr>
