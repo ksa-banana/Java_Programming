@@ -30,11 +30,26 @@
     <h5>프로젝트명: 공학용 계산기 구현</h5>
     <ul>
       <li>
-    <h6>프로젝트 구현 목적: Java를 이용하여 공학용 계산기를 Java Swing 또는 Android 애플리케이션으로 구현</h6>
+    <h5>프로젝트 구현 목적: Java를 이용하여 공학용 계산기를 Java Swing 또는 Android 애플리케이션으로 구현</h5>
       </li>
       <li>
-    <h6>프로젝트 기간: 2020.06.17~2020.06.30 (총 14일)</h6>
+    <h5>프로젝트 기간: 2020.06.17~2020.06.30 (총 14일)</h5>
       </li>
+       <li>팀명: Banana/ 팀장: 강나래  <br></li>
+     <li>
+    <h5>역할 분담</h5>
+      </li>
+       <table>
+  <tr>
+  <th colspan = "6" align=center>프로젝트 주제: 공학용 계산기</th>
+  </tr>
+  <tr>
+    <td align=center>이름</td> <td align=center>역할</td>
+  </tr>
+  <tr>
+    <td align=center>강나래</td><td align=center>프로젝트 다이어그램 구상 / 안드로이드 layout 구현/ 데이터 입력과 전처리 알고리즘 구현 </td>
+  </tr>
+  </table>
     </ul>
   </li>
  </ul>
