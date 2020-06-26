@@ -25,6 +25,7 @@
   </li>
   </ul>
 <h4>[팀 프로젝트]</h4>
+
 <ul>
   <li>
     <h5>프로젝트명: 공학용 계산기 구현</h5>
@@ -50,19 +51,19 @@
     <td align=center><h5>강나래</h5></td>
     <td align=center><h5>프로젝트 다이어그램 구상 / 안드로이드 layout 구현/ 데이터 입력과 전처리 알고리즘 구현</h5> </td>
   </tr>
-        <tr>
-    <td align=center>김주연</td>
-    <td align=center>프로젝트 다이어그램 구상 / 데이터 연산(사칙연산, 나머지연산, 상용로그함수, e지수함수 기능) 알고리즘 구현 / 프로젝트 문서화 </td>
+   <tr>
+    <td align=center><h5>김주연</h5></td>
+    <td align=center><h5>프로젝트 다이어그램 구상 / 데이터 연산(사칙연산, 나머지연산, 상용로그함수, e지수함수 기능) 알고리즘 구현 / 프로젝트 문서화</h5> </td>
   </tr>
-        <tr>
-    <td align=center>임성환</td>
-    <td align=center>프로젝트 다이어그램 구상 / 데이터 연산(거듭제곱 연산, 팩토리얼 연산 기능) 알고리즘 구현 </td>
+   <tr>
+    <td align=center><h5>임성환</h5></td>
+    <td align=center><h5>프로젝트 다이어그램 구상 / 데이터 연산(거듭제곱 연산, 팩토리얼 연산 기능) 알고리즘 구현</h5> </td>
   </tr>
-        <tr>
-    <td align=center>정주비</td>
-    <td align=center> 데이터 저장(히스토리 기능) 알고리즘 구현 / 데이터 출력 초기화(리셋 기능) 구현 / 전체 메인 흐름 코드(MainActivity) 알고리즘 수정</td>
+   <tr>
+    <td align=center><h5>정주비</h5></td>
+    <td align=center><h5>데이터 저장(히스토리 기능) 알고리즘 구현 / 데이터 출력 초기화(리셋 기능) 구현 / 전체 메인 흐름 코드(MainActivity) 알고리즘 수정</h5></td>
   </tr>
   </table>
-    </ul>
-  </li>
- </ul>
+   </ul>
+</li>
+</ul>
