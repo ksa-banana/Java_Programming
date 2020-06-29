@@ -32,6 +32,7 @@ public class InputOutput {
     
     void operation() {
     	Double num1, num2 = 0.0;
+    	numStack = new Stack<>();
     	Operation operation = new Operation();
     	
     	
@@ -40,45 +41,67 @@ public class InputOutput {
     		char c = output.get(i);
     		
     		if(isOperation(c)) {
-    			num1 = Double.parseDouble(numStack.get(i-2));
-    			num2 = Double.parseDouble(numStack.get(i-1));
     			
-    			
+   	
     			
     			switch(c) {
 					case '+':
+						num2 = Double.parseDouble(numStack.pop());
+		    			num1 = Double.parseDouble(numStack.pop());
+		    			
 						num1 = operation.plus(num1, num2);
 						numStack.add(num1+"");
 						break;
 					case '-':
+						num2 = Double.parseDouble(numStack.pop());
+		    			num1 = Double.parseDouble(numStack.pop());
+		    			
 						num1 = operation.minus(num1, num2);
 						numStack.add(num1+"");
 						break;
 					case '*':
+						num2 = Double.parseDouble(numStack.pop());
+		    			num1 = Double.parseDouble(numStack.pop());
+		    			
 						num1 = operation.multiplication(num1, num2);
 						numStack.add(num1+"");
 						break;
 					case '/':
+						num2 = Double.parseDouble(numStack.pop());
+		    			num1 = Double.parseDouble(numStack.pop());
+		    			
 						num1 = operation.division(num1, num2);
 						numStack.add(num1+"");
 						break;
 					case 'm':
+						num2 = Double.parseDouble(numStack.pop());
+		    			num1 = Double.parseDouble(numStack.pop());
+		    			
 						num1 = operation.mod(num1, num2);
 						numStack.add(num1+"");
 						break;
 					case '^':
+						num2 = Double.parseDouble(numStack.pop());
+		    			num1 = Double.parseDouble(numStack.pop());
+		    			
 						num1 = operation.involutionFunction(num1, num2);
 						numStack.add(num1+"");
 						break;
 					case 'l':
+						num2 = Double.parseDouble(numStack.pop());
+						
 						num1 = operation.commonLogFunction(num2);
 						numStack.add(num1+"");
 						break;
 					case 'e':
+						num2 = Double.parseDouble(numStack.pop());
+		    			
 						num1 = operation.expFunction(num2);
 						numStack.add(num1+"");
 						break;
 					case '!':
+						num2 = Double.parseDouble(numStack.pop());
+		    			
 						num1 = operation.factorialFunction(num2);
 						numStack.add(num1+"");
 						break;
@@ -91,7 +114,7 @@ public class InputOutput {
     		}
     	}
     	
-    	
+    	System.out.print(numStack.get(0));
     	
     }
     
