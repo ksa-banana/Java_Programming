@@ -119,21 +119,21 @@
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <h4> 1) InputOutput 클래스</h4>
 <ul>
- <li><h4>init 알고리즘</h4><li>
- <img src="" width="20%" height="20%">
+<li><h4>init 알고리즘</h4></li>
+<img src="" width="20%" height="20%">
  
-  <li><h4>inputFunction 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
+<li><h4>inputFunction 알고리즘</h4></li>
+<img src="" width="20%" height="20%">
  
- <li><h4>priorityFunction 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
+<li><h4>priorityFunction 알고리즘</h4></li>
+<img src="" width="20%" height="20%">
  
- <li><h4>calculatorFunction 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
+<li><h4>calculatorFunction 알고리즘</h4></li>
+<img src="" width="20%" height="20%">
 
-  <li><h4>isOperation 알고리즘</h4></li>
-   <img src="" width="20%" height="20%">
- </ul>
+<li><h4>isOperation 알고리즘</h4></li>
+<img src="" width="20%" height="20%">
+</ul>
  
  <h4>2) Operation 클래스</h4>
  <ul>
