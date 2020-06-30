@@ -151,9 +151,6 @@
   <li><h4>setNumListener 알고리즘</h4></li>
  <img src="" width="20%" height="20%">
  
-  <li><h4>onClick 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
- 
   <li><h4>setOperationListener 알고리즘</h4></li>
  <img src="" width="20%" height="20%">
 </ul>
