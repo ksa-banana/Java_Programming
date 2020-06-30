@@ -119,6 +119,10 @@
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
 <h4>1) InputOutput 클래스</h4>
 <ul>
+ <li>
+  <h4>init 알고리즘</h4>
+ </li>
+ <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/init_FlowChart.png?raw=true" width="70%" height="70%>
 <li>
 <h4>inputFunction 알고리즘</h4>
  </li>
