@@ -99,7 +99,7 @@
  <h4>2) Operation 클래스</h4>
  <ul>
  <li><h4>plus, minus, multiplication, division, mod, expFunction, commonLogFunction, involutionFunction, factorialFunction 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
+ <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/Operation_FlowChart.png?raw=true" width="70%" height="70%">
 </ul>
 <h4>3) MainActivity 클래스</h4>
 <ul>
