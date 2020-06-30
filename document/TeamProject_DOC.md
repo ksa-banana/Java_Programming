@@ -58,14 +58,20 @@
 </ul>
 
 <h4> 4) 레이아웃 </h4>
-<h5>activity_main.xml</h5>
+<ul>
+ <li><h5>activity_main.xml</h5></li>
+</ul>
 <br>
 <hr>
 
 <br>
 <h3> 3. 입력/출력 데이터 정의 (Data Structure Design) </h3>
-<h4> - 데이터 종류: 정수, 연산자</h4> 
-<h4> - 입력: 정수, 연산자</h4> 
+<ul>
+ <li> <h4> 데이터 종류: 피연산자(실수, double), 연산자(Character), Button 객체(reset, delete), 수식(문자열,String)</h4> </li>
+ <li> <h4> 입력: 피연산자(실수,double), 연산자(Character)</h4> </li>
+ <li> <h4> 출력: 계산한 결과값(문자열, String)</h4></li>
+</ul>
+
 <br>
 <br>
 <hr>
