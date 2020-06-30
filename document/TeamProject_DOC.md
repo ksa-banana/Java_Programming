@@ -120,13 +120,13 @@
 <h4> 1) InputOutput 클래스</h4>
 <ul>
 <li><h4>init 알고리즘</h4></li>
-<img src="" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/init_FlowChart.png?raw=true" width="20%" height="20%">
  
 <li><h4>inputFunction 알고리즘</h4></li>
-<img src="" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/inputFunction_FlowChart.png?raw=true" width="20%" height="20%">
  
 <li><h4>priorityFunction 알고리즘</h4></li>
-<img src="" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/priorityFunction_FlowChart.png?raw=true" width="20%" height="20%">
  
 <li><h4>calculatorFunction 알고리즘</h4></li>
 <img src="" width="20%" height="20%">
