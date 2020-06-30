@@ -99,7 +99,7 @@
 <br>
 <h4> 4) 레이아웃 </h4>
 <ul>
- <li><h5>activity_main.xml</h5></li>
+ <li><h5>activity_main.xml: 사용자가 보는 화면으로 출력되는 UI를 나타낸다. ScrollView 위젯, TextView 위젯, Button 위젯들을 포함하고 있다.</h5></li>
 </ul>
 <br>
 <hr>
