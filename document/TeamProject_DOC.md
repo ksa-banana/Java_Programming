@@ -9,11 +9,11 @@
 <h3> 2. 구조 설계 (Structure Design)</h3>
 <h4> 1) UML(Unified Modeling Language) Diagram </h4>
 <h4> (1) Use Case Diagram</h4>
-<img src="https://github.com/ksa-banana/Java_Programming/blob/master/UML_Diagram/Scientific_Calculator_Use_Case_Diagram.png?raw=true" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/UML_Diagram/Scientific_Calculator_Use_Case_Diagram.png?raw=true" width="50%" height="50%">
 <h4> (2) Sequence Diagram</h4>
-<img src="https://github.com/ksa-banana/Java_Programming/blob/master/UML_Diagram/Scientific_Calculator_Sequence_Diagram.png?raw=true" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/UML_Diagram/Scientific_Calculator_Sequence_Diagram.png?raw=true" width="50%" height="50%">
 <h4> (3) Class Diagram</h4>
-<img src="https://github.com/ksa-banana/Java_Programming/blob/master/UML_Diagram/Scientific_Calculator_Class_Diagram.png?raw=true" width="20%" height="20%">
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/UML_Diagram/Scientific_Calculator_Class_Diagram.png?raw=true" width="50%" height="50%">
 <h4> 1)  </h4>
 
 <h4> 2) 클래스 선언 및 생성 </h4>
