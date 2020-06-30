@@ -1,6 +1,6 @@
-package com.example.calc3;
+package com.example.calc;
 
-import com.example.calc3.Operation;
+import com.example.calc.Operation;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,6 @@ import java.util.Stack;
 public class InputOutput {
 
 	HashMap<String, Integer> opPriority;
-	Stack<String> opStack, numStack;
 	List<String> output = new ArrayList<>();
 	List<String> inputString = new ArrayList<>();
 
@@ -27,14 +26,29 @@ public class InputOutput {
 		opPriority.put("l", 3);
 		opPriority.put("e", 3);
 		opPriority.put("!", 3);
+	}
 
-		opStack = new Stack<>();
+
+
+
+
+	void init() {
+		if(!output.isEmpty()){
+			output.clear();
+		}
+		if(!inputString.isEmpty()){
+			inputString.clear();
+		}
+		output = new ArrayList<>();
+		inputString = new ArrayList<>();
+
 	}
 
 
 
 
 	Double inputFunction(String input) {
+		init();
 		int lastIndex = 0;
 
 
@@ -68,6 +82,9 @@ public class InputOutput {
 
 
 	Double priorityFunction() {
+		Stack<String> opStack = new Stack<>();
+
+
 		//후위 연산식으로 만들기
 		for (int i=0; i<inputString.size(); i++){
 			String s = inputString.get(i);
@@ -127,7 +144,7 @@ public class InputOutput {
 
 	Double calculatorFunction() {
 		Double num1, num2 = 0.0;
-		numStack = new Stack<>();
+		Stack<String> numStack = new Stack<>();
 		Operation operation = new Operation();
 
 

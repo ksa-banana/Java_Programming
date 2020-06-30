@@ -19,9 +19,11 @@
 
 
         <TextView
-            android:id="@+id/history"
+            android:id="@+id/historyDisplay"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textSize="30dp"/>
 
 
     </ScrollView>
@@ -33,6 +35,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginHorizontal="4dp"
+        android:gravity="right"
+        android:textSize="30dp"
         app:layout_constraintTop_toBottomOf="@+id/sv"
         app:layout_constraintBottom_toTopOf="@+id/btnEntireLayout"
         app:layout_constraintHeight_percent="0.3" />
@@ -49,16 +53,16 @@
         app:layout_constraintHeight_percent="0.5">
 
 
-        
-        
+
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/btn1RowLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHeight_percent="0.2">
-            
-            
+
+
             <Button
                 android:id="@+id/btnReset"
                 android:layout_width="0dp"
@@ -398,7 +402,7 @@
 
 
 
-        
+
 
 
 

@@ -1,4 +1,4 @@
-package com.example.calc3;
+package com.example.calc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -18,9 +19,14 @@ public class MainActivity extends AppCompatActivity {
     Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     Button btnReset, btnDel, btnLeftP, btnRightP, btnDot, btnEqual;
     Button btnPlus, btnMinus, btnMulti, btnDivision, btnLog, btnExp, btnMod, btnInvolution, btnFactorial;
-    TextView operExpressionDisplay;
+    TextView operExpressionDisplay, historyDisplay;
+    ScrollView scrollView;
 
-    String operExpression, input;
+    InputOutput io;
+    History history;
+
+
+    String operExpression, input, historyData;
     Double result;
 
 
@@ -80,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         operExpressionDisplay = (TextView) findViewById(R.id.operExpression);
+        historyDisplay = (TextView) findViewById(R.id.historyDisplay);
+        scrollView = (ScrollView) findViewById(R.id.sv);
+
+        io = new InputOutput();
+        history = new History();
 
 
         //변수 초기화
@@ -226,14 +237,19 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.btnEqual:
                         operExpression += "=";
 
-                        InputOutput io = new InputOutput();
                         result = io.inputFunction(input);
 
+                        //show history
+                        historyData = history.showHistory(operExpression+result);
+                        historyDisplay.append(historyData);
+                        scrollView.fullScroll(View.FOCUS_DOWN);
+
                         operExpression = result+"";
+                        input = result+"";
 
                         break;
                     case R.id.btnDel:
-                        input = input.substring(0, input.length()-2);
+                        input = input.substring(0, input.length()-1);
                         operExpression = input;
 
 
