@@ -2,9 +2,11 @@
 <h4>날짜: 2020.06.30 | 작성자: 김주연 | Version: 1.0 </h4>
 <hr>
 <h3> 1. 요구사항 분석 (Requirement Analysis) </h3>
-<h4>- 공학용 계산기 구현</h4>
-<h4>- java swing 또는 안드로이드 애플리케이션으로 구현</h4>
-<h4> ∴ 안드로이드 애플리케이션을 선택하였다. (∵ java swing은 java 8 버전부터 deprecated 이다.) </h4>
+<ul>
+ <li><h4>공학용 계산기 구현</h4></li>
+ <li><h4>java swing 또는 안드로이드 애플리케이션으로 구현</h4></li>
+ <ul>
+<h4>∴ 안드로이드 애플리케이션을 선택하였다. (∵ java swing은 java 8 버전부터 deprecated 이다.) </h4>
 <br>
 <h3> 2. 구조 설계 (Structure Design)</h3>
 <h4> 1) UML(Unified Modeling Language) Diagram </h4>
