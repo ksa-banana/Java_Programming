@@ -76,26 +76,37 @@
 <hr>
 
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
+<h4>InputOutput 클래스</h4>
 <ul>
 <li>
-<h4>알고리즘</h4>
+<h4>inputFunction 알고리즘</h4>
  </li>
 <img src="" width="20%" height="20%">
   <li>
-<h4>알고리즘</h4>
+<h4>priorityFunction 알고리즘</h4>
  </li>
 <img src="" width="20%" height="20%">
   <li>
-<h4>알고리즘</h4>
+<h4>calculatorFunction 알고리즘</h4>
+ </li>
+<img src="" width="20%" height="20%">
+   <li>
+<h4>isOperation 알고리즘</h4>
  </li>
 <img src="" width="20%" height="20%">
  </ul>
+ 
+ <h4>Operation 클래스</h4>
+ <ul>
+ <li><h4>plus, minus, multiplication, division, mod, expFunction, commonLogFunction, involutionFunction, factorialFunction 알고리즘</h4></li>
+ <img src="" width="20%" height="20%">
+ </ul>
 <br>
-
 <br>
 <hr>
+
 <h3> 5. 코딩 및 테스트 (Coding and Test) </h3>
 <ul>
- <li><h4>메뉴 출력화면</h4></li>
+ <li><h4>애플리케이션 첫번째 출력화면</h4></li>
   <img src="" width="50%" height="50%">
  </ul>
