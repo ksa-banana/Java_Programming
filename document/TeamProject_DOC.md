@@ -55,10 +55,11 @@
  <ul>
  <li><h5>필드: Button 위젯의 id들을 선언, TextView 위젯의 id들을 선언, ScrollView 위젯의 id들을 선언하고 있다.</h5></li>
  <li><h5>필드: InputOutput 클래스 선언, History 클래스 선언, 문자열 타입의 operExpression, input, historyData 선언, double(실수형)타입의 result 선언하고 있다.</h5></li>
- <li><h5>onCreate 메서드는 main 함수로 Button 리소스를 연결하기 위한 초기화(init), Button 리스너(setNumListener, setOperationListener)를 호출하고 있다. </h5></li>
- <li><h5>init 메서드는 Button을 각각의 기능과 연결해주고 하고 있다. 또한 InputOutput 객체와 History 객체를 생성하고 operExpression, input, result 변수를 초기화한다. </h5></li>
+ <li><h5>onCreate 메서드, init 메서드 </h5></li>
  </ul>
 </ul>
+
+<br>
 <h4> 3) 기능(함수) </h4>
 <ul>
  <li><h5>InputOutput 클래스 안에 있는 메서드</h5></li>
@@ -86,14 +87,15 @@
 </ul> 
  <li><h5>MainActivity 클래스 안에 있는 메서드</h5></li>
 <ul>
- <li><h5>OnCreate 메서드</h5></li>
- <li><h5>init 메서드</h5></li>
+ <li><h5>OnCreate 메서드: Button 리소스를 연결하기 위한 초기화(init), Button 리스너(setNumListener, setOperationListener)를 호출하고 있다.</h5></li>
+ <li><h5>init 메서드: Button을 각각의 기능과 연결해주고 하고 있다. 또한 InputOutput 객체와 History 객체를 생성하고 operExpression, input, result 변수를 초기화한다.</h5></li>
  <li><h5>setNumListener 메서드</h5></li>
  <li><h5>onClick 메서드</h5></li>
  <li><h5>setOperationListener 메서드</h5></li>
 </ul>
 </ul>
 
+<br>
 <h4> 4) 레이아웃 </h4>
 <ul>
  <li><h5>activity_main.xml</h5></li>
