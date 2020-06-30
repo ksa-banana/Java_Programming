@@ -122,7 +122,7 @@
  <li>
   <h4>init 알고리즘</h4>
  </li>
- <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/init_FlowChart.png?raw=true" width="70%" height="70%>
+ <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/init_FlowChart.png?raw=true" width="50%" height="50%>
 <li>
 <h4>inputFunction 알고리즘</h4>
  </li>
