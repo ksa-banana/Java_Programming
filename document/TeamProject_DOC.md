@@ -64,6 +64,7 @@
 <ul>
  <li><h5>InputOutput 클래스 안에 있는 메서드</h5></li>
 <ul>
+ <li><h5>init 메서드: ArrayList로 선언된 output과 inputString을 초기화하고 객체를 생성한다.</h5></li>
  <li><h5>inputFunction 메서드: 입력된 수식(문자열)을 연산자와 피연산자(숫자)로 분류하는 메서드</h5></li>
  <li><h5>priorityFunction 메서드: 입력된 수식(문자열)을 inputFunction메서드를 통해 연산자와 피연산자로 분류된 후, 후위 연산식으로 만드는 메서드</h5></li>
  <li><h5>calculatorFunction 메서드: 입력된 수식(문자열)에서 연산자에 따라 연산을 진행하는 메서드</h5></li>
