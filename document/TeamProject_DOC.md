@@ -55,7 +55,7 @@
  <ul>
  <li><h5>필드: Button 위젯의 id들을 선언, TextView 위젯의 id들을 선언, ScrollView 위젯의 id들을 선언하고 있다.</h5></li>
  <li><h5>필드: InputOutput 클래스 선언, History 클래스 선언, 문자열 타입의 operExpression, input, historyData 선언, double(실수형)타입의 result 선언하고 있다.</h5></li>
- <li><h5>onCreate 메서드, init 메서드 </h5></li>
+ <li><h5>onCreate 메서드, init 메서드, setNumListener 메서드, onClick 메서드, setOperationListener 메서드를 포함하고 있다. </h5></li>
  </ul>
 </ul>
 
@@ -89,7 +89,7 @@
 <ul>
  <li><h5>OnCreate 메서드: Button 리소스를 연결하기 위한 초기화(init), Button 리스너(setNumListener, setOperationListener)를 호출하고 있다.</h5></li>
  <li><h5>init 메서드: Button을 각각의 기능과 연결해주고 하고 있다. 또한 InputOutput 객체와 History 객체를 생성하고 operExpression, input, result 변수를 초기화한다.</h5></li>
- <li><h5>setNumListener 메서드</h5></li>
+ <li><h5>setNumListener 메서드: 리스너의 정의를 한다. 숫자 버튼이 눌렸을 때, Button의 id 값에 따라서 수식을 저장하는 변수(operExpression)에 숫자 문자열(0~9)을 저장한다. 저장된 연산식이 화면에 출력되도록 한다. 각 Button 객체의 setOnClickListener 함수를 통해 이벤트 리스너를 등록한다.</h5></li>
  <li><h5>onClick 메서드</h5></li>
  <li><h5>setOperationListener 메서드</h5></li>
 </ul>
