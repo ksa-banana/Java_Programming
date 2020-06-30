@@ -61,15 +61,15 @@
 </ul>
  <li><h5>Operation 클래스 안에 있는 메서드</h5></li>
 <ul>
- <li><h5>plus 메서드</h5></li>
- <li><h5>minus 메서드</h5></li>
- <li><h5>multiplication 메서드</h5></li>
- <li><h5>division 메서드</h5></li>
- <li><h5>mod 메서드</h5></li>
- <li><h5>expFunction 메서드</h5></li>
- <li><h5>commonLogFunction 메서드</h5></li>
- <li><h5>involutionFunction 메서드</h5></li>
- <li><h5>factorialFunction 메서드</h5></li>
+ <li><h5>plus 메서드: 입력된 숫자(피연산자) 2개를 사용하여 덧셈한다.</h5></li>
+ <li><h5>minus 메서드: 입력된 숫자(피연산자) 2개를 사용하여 뺄샘하는 메서드(빼고자 하는 숫자에 -1을 곱하여 덧셈을 한다.)</h5></li>
+ <li><h5>multiplication 메서드: 입력된 숫자(피연산자) 2개를 사용하여 곱한다.</h5></li>
+ <li><h5>division 메서드: 입력된 숫자(피연산자) 2개를 사용하여 나눈다.</h5></li>
+ <li><h5>mod 메서드: 입력된 숫자(피연산자) 2개를 사용하여 나머지 값을 구한다.</h5></li>
+ <li><h5>expFunction 메서드: 입력된 숫자(피연산자) 1개를 사용하여 자연로그(e)의 지수 함수값을 구한다.</h5></li>
+ <li><h5>commonLogFunction 메서드: 입력된 숫자(피연산자) 1개를 사용하여 상용로그(10을 밑으로 하는 로그함수)함수값을 구한다.</h5></li>
+ <li><h5>involutionFunction 메서드: 입력된 숫자(피연산자) 2개를 사용하여 거듭제곱 값을 구한다.</h5></li>
+ <li><h5>factorialFunction 메서드: 입력된 숫자(피연산자) 1개를 사용하여 팩토리얼 값을 구한다.</h5></li>
 </ul>
   <li><h5>History 클래스 안에 있는 메서드</h5></li>
 <ul>
