@@ -24,14 +24,14 @@
 </ul>
 <h4> 3) 기능(함수) </h4>
 <ul>
- <li>InputOutput 클래스 안에 있는 메서드</li>
+ <li><h5>InputOutput 클래스 안에 있는 메서드</h5></li>
 <ul>
  <li><h5>inputFunction 메서드</h5></li>
  <li><h5>priorityFunction 메서드</h5></li>
  <li><h5>calculatorFunction 메서드</h5></li>
  <li><h5>isOperation 메서드</h5></li>
 </ul>
-  <li>Operation 클래스 안에 있는 메서드</li>
+ <li><h5>Operation 클래스 안에 있는 메서드</h5></li>
 <ul>
  <li><h5>plus 메서드</h5></li>
  <li><h5>minus 메서드</h5></li>
@@ -43,11 +43,11 @@
  <li><h5>involutionFunction 메서드</h5></li>
  <li><h5>factorialFunction 메서드</h5></li>
 </ul>
-  <li>History 클래스 안에 있는 메서드</li>
+  <li><h5>History 클래스 안에 있는 메서드</h5></li>
 <ul>
  <li><h5>historyFunction 메서드</h5></li>
 </ul> 
-  <li>MainActivity 클래스 안에 있는 메서드</li>
+ <li><h5>MainActivity 클래스 안에 있는 메서드</h5></li>
 <ul>
  <li><h5>OnCreate 메서드</h5></li>
  <li><h5>init 메서드</h5></li>
@@ -58,10 +58,10 @@
 </ul>
 
 <h4> 4) 레이아웃 </h4>
-<h4> 5) </h4>
-<h4> 6) </h4>
+<h5>activity_main.xml</h5>
 <br>
 <hr>
+
 <br>
 <h3> 3. 입력/출력 데이터 정의 (Data Structure Design) </h3>
 <h4> - 데이터 종류: 정수, 연산자</h4> 
