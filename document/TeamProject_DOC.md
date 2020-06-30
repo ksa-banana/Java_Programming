@@ -14,13 +14,16 @@
 <img src="https://github.com/ksa-banana/Java_Programming/blob/master/UML_Diagram/Scientific_Calculator_Sequence_Diagram.png?raw=true" width="70%" height="70%">
 <h4> (3) Class Diagram</h4>
 <img src="https://github.com/ksa-banana/Java_Programming/blob/master/UML_Diagram/Scientific_Calculator_Class_Diagram.png?raw=true" width="70%" height="70%">
-<h4> 1)  </h4>
-
-<h4> 2) 클래스 선언 및 생성 </h4>
+<br>
+<h4> 2) 클래스 생성</h4>
+<ul>
+ <li> <h5>InputOutput 클래스</h5> </li>
+ <li> <h5>Operation 클래스</h5> </li>
+ <li> <h5>History 클래스</h5></li>
+</ul>
+<h4> 3) 기능(함수) </h4>
 <h5></h5>
-<h4> 3) 레이아웃 </h4>
-<h5></h5>
-<h4> 4) 기능 (함수) </h4>
+<h4> 4) 레이아웃 </h4>
 <h4> 5) </h4>
 <h4> 6) </h4>
 <br>
