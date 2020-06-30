@@ -21,9 +21,14 @@
 <ul>
  <li>
   <h5>
-   InputOutput 클래스: 수식의 연산 우선 순위의 HashMap, 연산자 Stack, 피연산자 Stack, 후위 연산 표기법으로 변환된 문자열의 ArrayList, 입력받은 수식 문자열 ArrayList의 자료구조를 필드로 갖고 있다. 연산자의 우선순위를 결정해주기 위해 초기화 한다. 입력된 수식의 연산자와 피연산자(숫자)를 분류하는 메서드(inputFunction)를 포함한다. 후위 연산식으로 만드는 메서드(priorityFunction)을 포함한다. 연산자에 따라서 연산식을 수행하는 메서드(calculatorFunction)를 포함한다. 올바른 연산자인지 아닌지 판별하는 메서드(isOperation)을 포함한다.
+   InputOutput 클래스
   </h5>
  </li>
+   <ul>
+    <li>
+     수식의 연산 우선 순위의 HashMap, 연산자 Stack, 피연산자 Stack, 후위 연산 표기법으로 변환된 문자열의 ArrayList, 입력받은 수식 문자열 ArrayList의 자료구조를 필드로 갖고 있다. 연산자의 우선순위를 결정해주기 위해 초기화 한다. 입력된 수식의 연산자와 피연산자(숫자)를 분류하는 메서드(inputFunction)를 포함한다. 후위 연산식으로 만드는 메서드(priorityFunction)을 포함한다. 연산자에 따라서 연산식을 수행하는 메서드(calculatorFunction)를 포함한다. 올바른 연산자인지 아닌지 판별하는 메서드(isOperation)을 포함한다.
+    </li>
+   </ul>
  <li> <h5>Operation 클래스</h5> </li>
  <li> <h5>History 클래스</h5></li>
  <li> <h5>MainActivity 클래스</h5></li>
