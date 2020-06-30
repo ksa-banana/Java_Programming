@@ -7,8 +7,14 @@
 <h4> ∴ 안드로이드 애플리케이션을 선택하였다. (∵ java swing은 java 8 버전부터 deprecated 이다.) </h4>
 <br>
 <h3> 2. 구조 설계 (Structure Design)</h3>
+<h4> 1) UML(Unified Modeling Language) Diagram </h4>
+<h4> (1) Use Case Diagram</h4>
 <img src="" width="20%" height="20%">
-<h4> 1) 첫 번째: </h4>
+<h4> (2) Sequence Diagram</h4>
+<img src="" width="20%" height="20%">
+<h4> (3) Class Diagram</h4>
+<img src="" width="20%" height="20%">
+<h4> 1)  </h4>
 
 <h4> 2) 클래스 선언 및 생성 </h4>
 <h5></h5>
