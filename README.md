@@ -53,6 +53,9 @@
           <h5>정주비: 데이터 저장(히스토리 기능) 알고리즘 구현/ 데이터 출력 초기화(리셋 기능) 구현/ 프로그램 MainActivity 알고리즘 수정</h5> 
         </li>
       </ul>
+      <li>
+        <h5><a href="https://github.com/ksa-banana/Java_Programming/blob/master/document/TeamProject_DOC.md">프로젝트 문서화</a></h5>
+      </li>
    </ul>
 </li>
 </ul>
