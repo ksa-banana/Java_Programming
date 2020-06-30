@@ -19,11 +19,7 @@
 <br>
 <h4> 2) 클래스 생성</h4>
 <ul>
- <li>
-  <h5>
-   InputOutput 클래스
-  </h5>
- </li>
+ <li><h5>InputOutput 클래스</h5></li>
    <ul>
     <li>
      <h5>수식의 연산 우선 순위의 HashMap, 연산자 Stack, 피연산자 Stack, 후위 연산 표기법으로 변환된 문자열의 ArrayList, 입력받은 수식 문자열 ArrayList의 자료구조를 필드로 갖고 있다.</h5>
@@ -43,7 +39,14 @@
        <h5>올바른 연산자인지 아닌지 판별하는 메서드(isOperation)을 포함한다.</h5>
     </li>
    </ul>
+ 
  <li> <h5>Operation 클래스</h5> </li>
+ <ul>
+ <li><h5>입력으로 들어오는 연산자에 따라서 수식을 연산하는 기능들을 포함하고 있다.</h5></li>
+  <li><h5>기본적인 사칙연산(덧셈, 뺄셈, 곱셈, 나눗셈)을 구현하는 메서드를 포함하고 있다. (plus, minus, multiplication, division)</h5></li>
+  <li><h5>추가적으로 나머지 연산(mod), 자연로그(e) 지수연산(exp), 상용로그 연산(commonLogFunction), 거듭제곱 연산(involutionFunction), 팩토리얼 연산(factorialFunction)을 포함하고 있다.</h5></li>
+ </ul>
+ 
  <li> <h5>History 클래스</h5></li>
  <li> <h5>MainActivity 클래스</h5></li>
 </ul>
