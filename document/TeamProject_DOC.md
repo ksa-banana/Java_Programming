@@ -53,8 +53,8 @@
  </ul>
  <li> <h5>MainActivity 클래스</h5></li>
  <ul>
- <li><h5>Button 위젯의 id들을 선언, TextView 위젯의 id들을 선언, ScrollView 위젯의 id들을 선언하였다.</h5></li>
- <li><h5>InputOutput 클래스 선언, History 클래스 선언, 문자열 타입의 operExpression, input, historyData 선언, double(실수형)타입의 result 선언</h5></li>
+ <li><h5>필드: Button 위젯의 id들을 선언, TextView 위젯의 id들을 선언, ScrollView 위젯의 id들을 선언하고 있다.</h5></li>
+ <li><h5>필드: InputOutput 클래스 선언, History 클래스 선언, 문자열 타입의 operExpression, input, historyData 선언, double(실수형)타입의 result 선언하고 있다.</h5></li>
  </ul>
 </ul>
 <h4> 3) 기능(함수) </h4>
