@@ -23,7 +23,40 @@
  <li> <h5>MainActivity 클래스</h5></li>
 </ul>
 <h4> 3) 기능(함수) </h4>
-<h5></h5>
+<ul>
+ <li>InputOutput 클래스 안에 있는 메서드</li>
+<ul>
+ <li><h5>inputFunction 메서드</h5></li>
+ <li><h5>priorityFunction 메서드</h5></li>
+ <li><h5>calculatorFunction 메서드</h5></li>
+ <li><h5>isOperation 메서드</h5></li>
+</ul>
+  <li>Operation 클래스 안에 있는 메서드</li>
+<ul>
+ <li><h5>plus 메서드</h5></li>
+ <li><h5>minus 메서드</h5></li>
+ <li><h5>multiplication 메서드</h5></li>
+ <li><h5>division 메서드</h5></li>
+ <li><h5>mod 메서드</h5></li>
+ <li><h5>expFunction 메서드</h5></li>
+ <li><h5>commonLogFunction 메서드</h5></li>
+ <li><h5>involutionFunction 메서드</h5></li>
+ <li><h5>factorialFunction 메서드</h5></li>
+</ul>
+  <li>History 클래스 안에 있는 메서드</li>
+<ul>
+ <li><h5>historyFunction 메서드</h5></li>
+</ul> 
+  <li>MainActivity 클래스 안에 있는 메서드</li>
+<ul>
+ <li><h5>OnCreate 메서드</h5></li>
+ <li><h5>init 메서드</h5></li>
+ <li><h5>setNumListener 메서드</h5></li>
+ <li><h5>onClick 메서드</h5></li>
+ <li><h5>setOperationListener 메서드</h5></li>
+</ul>
+</ul>
+
 <h4> 4) 레이아웃 </h4>
 <h4> 5) </h4>
 <h4> 6) </h4>
