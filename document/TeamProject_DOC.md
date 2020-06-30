@@ -89,10 +89,10 @@
 <ul>
  <li><h5>@Override OnCreate 메서드: Button 리소스를 연결하기 위한 초기화(init), Button 리스너(setNumListener, setOperationListener)를 호출하고 있다.</h5></li>
  <li><h5>init 메서드: Button을 각각의 기능과 연결해주고 하고 있다. 또한 InputOutput 객체와 History 객체를 생성하고 operExpression, input, result 변수를 초기화한다.</h5></li>
- <li><h5>setNumListener 메서드: 리스너의 정의를 한다.</h5></li>
+ <li><h5>setNumListener 메서드: 리스너 정의를 한다.</h5></li>
  <li><h5>@Override onClick 메서드: 숫자 버튼이 눌렸을 때, Button의 id 값에 따라서 수식을 저장하는 변수(operExpression)에 숫자 문자열(0~9)을 저장한다. 저장된 연산식이 화면에 출력되도록 한다. 각 Button 객체의 setOnClickListener 함수를 통해 이벤트 리스너를 등록한다.</h5></li>
- <li><h5>setOperationListener 메서드: 연산자 버튼이 눌렸을 때, Button의 id값에 따라서 수식을 저장하는 변수(operExpression)에 연산자, 괄호, 소수점(+, -, *, /, mod, ^,log, exp, !, (,), ., =)을 저장한다. '=' 연산자를 누르면 History에 저장되도록 한다. 'del'버튼을 누르면 해당 수식에서 가장 마지막에 들어간 것이 지워진다. 'reset' 버튼을 누르면 해당 수식이 모두 없어지도록 한다. 저장된 연산식이 화면에 출력되도록 한다. 각 Button 객체의 setOnClickListener 함수를 통해 이벤트 리스너를 등록한다.</h5></li>
- <li><h5>@Override onClick 메서드</h5></li>
+ <li><h5>setOperationListener 메서드: 리스너 정의를 한다.</h5></li>
+ <li><h5>@Override onClick 메서드: 연산자 버튼이 눌렸을 때, Button의 id값에 따라서 수식을 저장하는 변수(operExpression)에 연산자, 괄호, 소수점(+, -, *, /, mod, ^,log, exp, !, (,), ., =)을 저장한다. '=' 연산자를 누르면 History에 저장되도록 한다. 'del'버튼을 누르면 해당 수식에서 가장 마지막에 들어간 것이 지워진다. 'reset' 버튼을 누르면 해당 수식이 모두 없어지도록 한다. 저장된 연산식이 화면에 출력되도록 한다. 각 Button 객체의 setOnClickListener 함수를 통해 이벤트 리스너를 등록한다.</h5></li>
 </ul>
 </ul>
 
