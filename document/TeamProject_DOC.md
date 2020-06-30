@@ -5,7 +5,7 @@
 <ul>
  <li><h4>공학용 계산기 구현</h4></li>
  <li><h4>java swing 또는 안드로이드 애플리케이션으로 구현</h4></li>
- <ul>
+ </ul>
 <h4>∴ 안드로이드 애플리케이션을 선택하였다. (∵ java swing은 java 8 버전부터 deprecated 이다.) </h4>
 <br>
 <h3> 2. 구조 설계 (Structure Design)</h3>
