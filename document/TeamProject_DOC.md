@@ -20,6 +20,7 @@
  <li> <h5>InputOutput 클래스</h5> </li>
  <li> <h5>Operation 클래스</h5> </li>
  <li> <h5>History 클래스</h5></li>
+ <li> <h5>MainActivity 클래스</h5></li>
 </ul>
 <h4> 3) 기능(함수) </h4>
 <h5></h5>
