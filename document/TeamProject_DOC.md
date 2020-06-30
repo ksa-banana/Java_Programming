@@ -118,6 +118,8 @@
   <li><h4>setOperationListener 알고리즘</h4></li>
  <img src="" width="20%" height="20%">
 </ul>
+
+<h4>4) activity_main.xml 구조</h4>
 <br>
 <br>
 <hr>
