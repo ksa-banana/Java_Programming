@@ -28,7 +28,7 @@
 
 <ul>
   <li>
-    <h5>프로젝트명: 공학용 계산기 구현</h5>
+    <h5><a href="https://github.com/ksa-banana/Java_Programming/tree/master/version1.0">프로젝트명: 공학용 계산기 구현</a></h5>
     <ul>
       <li>
     <h5>프로젝트 구현 목적: Java를 이용하여 공학용 계산기를 Java Swing 또는 Android 애플리케이션으로 구현</h5>
