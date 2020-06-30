@@ -76,7 +76,7 @@
 <hr>
 
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
-<h4>InputOutput 클래스</h4>
+<h4>1) InputOutput 클래스</h4>
 <ul>
 <li>
 <h4>inputFunction 알고리즘</h4>
@@ -96,11 +96,29 @@
 <img src="" width="20%" height="20%">
  </ul>
  
- <h4>Operation 클래스</h4>
+ <h4>2) Operation 클래스</h4>
  <ul>
  <li><h4>plus, minus, multiplication, division, mod, expFunction, commonLogFunction, involutionFunction, factorialFunction 알고리즘</h4></li>
  <img src="" width="20%" height="20%">
+
+<h4>3) MainActivity 클래스</h4>
+<ul>
+ <li><h4>onCreate 알고리즘</h4></li>
+ <img src="" width="20%" height="20%">
+ 
+  <li><h4>init 알고리즘</h4></li>
+ <img src="" width="20%" height="20%">
+ 
+  <li><h4>setNumListener 알고리즘</h4></li>
+ <img src="" width="20%" height="20%">
+ 
+  <li><h4>onClick 알고리즘</h4></li>
+ <img src="" width="20%" height="20%">
+ 
+  <li><h4>setOperationListener 알고리즘</h4></li>
+ <img src="" width="20%" height="20%">
  </ul>
+</ul>
 <br>
 <br>
 <hr>
