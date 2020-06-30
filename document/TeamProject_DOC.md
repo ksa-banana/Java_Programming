@@ -1,5 +1,5 @@
 ## [팀 프로젝트]
-<h4>날짜: 2020.06.25 | 작성자: 김주연 | Version: 1.0 </h4>
+<h4>날짜: 2020.06.30 | 작성자: 김주연 | Version: 1.0 </h4>
 <hr>
 <h3> 1. 요구사항 분석 (Requirement Analysis) </h3>
 <h4>- 공학용 계산기 구현</h4>
@@ -100,7 +100,7 @@
  <ul>
  <li><h4>plus, minus, multiplication, division, mod, expFunction, commonLogFunction, involutionFunction, factorialFunction 알고리즘</h4></li>
  <img src="" width="20%" height="20%">
-
+</ul>
 <h4>3) MainActivity 클래스</h4>
 <ul>
  <li><h4>onCreate 알고리즘</h4></li>
@@ -117,7 +117,6 @@
  
   <li><h4>setOperationListener 알고리즘</h4></li>
  <img src="" width="20%" height="20%">
- </ul>
 </ul>
 <br>
 <br>
