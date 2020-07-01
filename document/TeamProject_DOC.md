@@ -152,7 +152,7 @@
  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/setNumListener_FlowChart.png?raw=true" width="70%" height="70%">
  
   <li><h4>setOperationListener 알고리즘</h4></li>
- <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/setOperationListener_FlowChart.png?raw=true" width="20%" height="20%">
+ <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/setOperationListener_FlowChart.png?raw=true" width="70%" height="70%">
 </ul>
 
 <h4>4) activity_main.xml 구조</h4>
