@@ -168,6 +168,30 @@
   <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_number.PNG?raw=true" width="70%" height="70%">
   <li><h4>애플리케이션 덧셈 연산</h4></li>
   <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_plus.PNG?raw=true" width="70%" height="70%">
-  <li><h4>애플리케이션 뺄셈 </h4></li>
+  <li><h4>애플리케이션 뺄셈 연산 </h4></li>
   <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_minus.PNG?raw=true" width="70%" height="70%">
+   <li><h4>애플리케이션 곱셈 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_multiplication.PNG?raw=true" width="70%" height="70%">
+   <li><h4>애플리케이션 나눗셈 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_division.PNG?raw=true" width="70%" height="70%">
+    <li><h4>애플리케이션 나머지 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_mod.PNG?raw=true" width="70%" height="70%">
+   <li><h4>애플리케이션 자연로그 지수 연산(exp()) </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_expFunction.PNG?raw=true" width="70%" height="70%">
+    <li><h4>애플리케이션 상용로그 연산 (log) </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_commonLogFunction.PNG?raw=true" width="70%" height="70%">
+     <li><h4>애플리케이션 거듭제곱 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_involutionFunction.PNG?raw=true" width="70%" height="70%">
+      <li><h4>애플리케이션 팩토리얼 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_factorialFunction.PNG?raw=true" width="70%" height="70%">
+        <li><h4>애플리케이션 소수점 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_dot.PNG?raw=true" width="70%" height="70%">
+       <li><h4>애플리케이션 괄호 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_Parenthesis.PNG?raw=true" width="70%" height="70%">
+        <li><h4>애플리케이션 Delete 기능 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_deleteFunction.PNG?raw=true" width="70%" height="70%">
+  <li><h4>애플리케이션 Reset 기능 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_reset.PNG?raw=true" width="70%" height="70%">
+   <li><h4>애플리케이션 History 기능 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_History.PNG?raw=true" width="70%" height="70%">
  </ul>
