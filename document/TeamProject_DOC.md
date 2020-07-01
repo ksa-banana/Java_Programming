@@ -163,5 +163,11 @@
 <h3> 5. 코딩 및 테스트 (Coding and Test) </h3>
 <ul>
  <li><h4>애플리케이션 run</h4></li>
-  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App.PNG?raw=true" width="50%" height="50%">
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App.PNG?raw=true" width="70%" height="70%">
+  <li><h4>애플리케이션 숫자 입력</h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_number.PNG?raw=true" width="70%" height="70%">
+  <li><h4>애플리케이션 덧셈 연산</h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_plus.PNG?raw=true" width="70%" height="70%">
+  <li><h4>애플리케이션 뺄셈 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_minus.PNG?raw=true" width="70%" height="70%">
  </ul>
