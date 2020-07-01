@@ -154,12 +154,10 @@
   <li><h4>setOperationListener 알고리즘</h4></li>
  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/setOperationListener_FlowChart.png?raw=true" width="70%" height="70%">
 </ul>
+<br>
+<br>
 
-<h4>4) activity_main.xml 구조</h4>
-<br>
-<br>
 <hr>
-
 <h3> 5. 코딩 및 테스트 (Coding and Test) </h3>
 <ul>
  <li><h4>애플리케이션 run</h4></li>
