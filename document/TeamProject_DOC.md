@@ -191,7 +191,7 @@
         <li><h4>애플리케이션 Delete 기능 </h4></li>
   <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_deleteFunction.PNG?raw=true" width="70%" height="70%">
   <li><h4>애플리케이션 Reset 기능 </h4></li>
-  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_reset.PNG?raw=true" width="70%" height="70%">
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_resetFunction.PNG?raw=true" width="70%" height="70%">
    <li><h4>애플리케이션 History 기능 </h4></li>
   <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_History.PNG?raw=true" width="70%" height="70%">
  </ul>
