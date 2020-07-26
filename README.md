@@ -28,7 +28,7 @@
 
 <ul>
   <li>
-    <h5>프로젝트명: 공학용 계산기 구현</h5>
+    <h5><a href="https://github.com/ksa-banana/Java_Programming/tree/master/version1.0">프로젝트 명: 공학용 계산기 구현</a></h5>
     <ul>
       <li>
     <h5>프로젝트 구현 목적: Java를 이용하여 공학용 계산기를 Java Swing 또는 Android 애플리케이션으로 구현</h5>
@@ -44,7 +44,7 @@
           <h5>강나래: 프로젝트 다이어그램 구상/ 안드로이드 layout 구현/ 프로그램 MainActivity 알고리즘 구현/ 데이터 입력 알고리즘 구현/ 수식 후위연산 알고리즘 구현/ 데이터 연산 우선순위 알고리즘 구현 </h5> 
         </li>
          <li>
-          <h5>김주연: 프로젝트 다이어그램 구상/ 데이터 연산(사칙연산, 나머지연산, 상용로그함수, e지수함수 기능) 알고리즘 구현/ 프로그램 MainActivity 알고리즘 수정/ 데이터 연산자, 피연산자별 분류 알고리즘 수정/ 프로젝트 문서화 </h5> 
+          <h5>김주연: 프로젝트 다이어그램 구상/ 데이터 연산(사칙연산, 나머지연산, 상용로그함수, e지수함수 기능) 알고리즘 구현/ 프로그램 MainActivity 알고리즘 수정/ 데이터 연산자, 피연산자별 분류 알고리즘 수정/ 프로젝트 문서화 / 프로젝트 시뮬레이션 화면 녹화 및 편집 </h5> 
         </li>
          <li>
           <h5>임성환: 프로젝트 다이어그램 구상/ 데이터 연산(거듭제곱 연산, 팩토리얼 연산 기능) 알고리즘 구현/ 프로그램 MainActivity 알고리즘 수정 / 데이터 연산자, 피연산자별 분류 알고리즘 수정</h5> 
@@ -53,6 +53,12 @@
           <h5>정주비: 데이터 저장(히스토리 기능) 알고리즘 구현/ 데이터 출력 초기화(리셋 기능) 구현/ 프로그램 MainActivity 알고리즘 수정</h5> 
         </li>
       </ul>
+      <li>
+        <h5><a href="https://github.com/ksa-banana/Java_Programming/blob/master/document/TeamProject_DOC.md">프로젝트 문서화</a></h5>
+      </li>
+       <li>
+        <h5><a href="https://youtu.be/eTHPNKARuLE">프로젝트 동영상</a></h5>
+      </li>
    </ul>
 </li>
 </ul>

@@ -1,52 +1,52 @@
-ï»¿package com.example.calc3;
+package com.example.calc3;
 
 public class Operation {
 
-    // ì‚¬ì¹™ì—°ì‚°
-    // ë§ì…ˆ
+    // »çÄ¢¿¬»ê
+    // µ¡¼À
     public double plus(double x, double y){
         return x+y;
     }
 
-    // ëº„ì…ˆ: -1ì„ ê³±í•œ ê²ƒìœ¼ë¡œ ë³€í™˜
+    // »¬¼À: -1À» °öÇÑ °ÍÀ¸·Î º¯È¯
     public double minus(double x, double y){
         return x+(-1)*y;
     }
 
-    // ê³±ì…ˆ
+    // °ö¼À
     public double multiplication(double x, double y){
         return x*y;
     }
 
-    // ë‚˜ëˆ—ì…ˆ
+    // ³ª´°¼À
     public double division(double x, double y){
         return x/y;
     }
 
-    // ë‚˜ë¨¸ì§€ ì—°ì‚°
+    // ³ª¸ÓÁö ¿¬»ê
     public double mod(double x, double y){
         return x%y;
     }
 
 
-    // exp() ì§€ìˆ˜ ì—°ì‚°
+    // exp() Áö¼ö ¿¬»ê
     public double expFunction(double x){
 
         return Math.exp(x);
     }
 
-    // ìƒìš©ë¡œê·¸ ì—°ì‚°
+    // »ó¿ë·Î±× ¿¬»ê
     public double commonLogFunction(double x){
         return Math.log10(x);
     }
 
 
-    // ê±°ë“­ì œê³± ì—°ì‚°
+    // °ÅµìÁ¦°ö ¿¬»ê
     public double involutionFunction(double x, double y) {
         return Math.pow(x,y);
     }
 
-    // íŒ©í† ë¦¬ì–¼ ì—°ì‚°
+    // ÆÑÅä¸®¾ó ¿¬»ê
     public double factorialFunction(double x) {
 		if (x == 0) {
 			return 1;

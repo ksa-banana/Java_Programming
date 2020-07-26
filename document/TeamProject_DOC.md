@@ -64,6 +64,7 @@
 <ul>
  <li><h5>InputOutput 클래스 안에 있는 메서드</h5></li>
 <ul>
+ <li><h5>init 메서드: ArrayList로 선언된 output과 inputString을 초기화하고 객체를 생성한다.</h5></li>
  <li><h5>inputFunction 메서드: 입력된 수식(문자열)을 연산자와 피연산자(숫자)로 분류하는 메서드</h5></li>
  <li><h5>priorityFunction 메서드: 입력된 수식(문자열)을 inputFunction메서드를 통해 연산자와 피연산자로 분류된 후, 후위 연산식으로 만드는 메서드</h5></li>
  <li><h5>calculatorFunction 메서드: 입력된 수식(문자열)에서 연산자에 따라 연산을 진행하는 메서드</h5></li>
@@ -116,25 +117,23 @@
 <hr>
 
 <h3> 4. 알고리즘 설계 및 구현 (Algorithm Design and Implementation) </h3>
-<h4>1) InputOutput 클래스</h4>
+<h4> 1) InputOutput 클래스</h4>
 <ul>
-<li>
-<h4>inputFunction 알고리즘</h4>
- </li>
-<img src="" width="20%" height="20%">
-  <li>
-<h4>priorityFunction 알고리즘</h4>
- </li>
-<img src="" width="20%" height="20%">
-  <li>
-<h4>calculatorFunction 알고리즘</h4>
- </li>
-<img src="" width="20%" height="20%">
-   <li>
-<h4>isOperation 알고리즘</h4>
- </li>
-<img src="" width="20%" height="20%">
- </ul>
+<li><h4>init 알고리즘</h4></li>
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/init_FlowChart.png?raw=true" width="70%" height="70%">
+ 
+<li><h4>inputFunction 알고리즘</h4></li>
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/inputFunction_FlowChart.png?raw=true" width="70%" height="70%">
+ 
+<li><h4>priorityFunction 알고리즘</h4></li>
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/priorityFunction_FlowChart.png?raw=true" width="70%" height="70%">
+ 
+<li><h4>calculatorFunction 알고리즘</h4></li>
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/calculatorFunction_FlowChart_01.png?raw=true" width="70%" height="70%">
+
+<li><h4>isOperation 알고리즘</h4></li>
+<img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/isOperation_FlowChart.png?raw=true" width="50%" height="50%">
+</ul>
  
  <h4>2) Operation 클래스</h4>
  <ul>
@@ -144,28 +143,53 @@
 <h4>3) MainActivity 클래스</h4>
 <ul>
  <li><h4>onCreate 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
+ <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/onCreate_FlowChart.png?raw=true" width="20%" height="20%">
  
   <li><h4>init 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
+ <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/init_MainActivity_FlowChart.png?raw=true" width="20%" height="20%">
  
   <li><h4>setNumListener 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
- 
-  <li><h4>onClick 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
+ <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/setNumListener_FlowChart.png?raw=true" width="70%" height="70%">
  
   <li><h4>setOperationListener 알고리즘</h4></li>
- <img src="" width="20%" height="20%">
+ <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/setOperationListener_FlowChart.png?raw=true" width="70%" height="70%">
 </ul>
+<br>
+<br>
 
-<h4>4) activity_main.xml 구조</h4>
-<br>
-<br>
 <hr>
-
 <h3> 5. 코딩 및 테스트 (Coding and Test) </h3>
 <ul>
- <li><h4>애플리케이션 첫번째 출력화면</h4></li>
-  <img src="" width="50%" height="50%">
+ <li><h4>애플리케이션 run</h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App.PNG?raw=true" width="70%" height="70%">
+  <li><h4>애플리케이션 숫자 입력</h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_number.PNG?raw=true" width="70%" height="70%">
+  <li><h4>애플리케이션 덧셈 연산</h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_plus.PNG?raw=true" width="70%" height="70%">
+  <li><h4>애플리케이션 뺄셈 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_minus.PNG?raw=true" width="70%" height="70%">
+   <li><h4>애플리케이션 곱셈 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_multiplication.PNG?raw=true" width="70%" height="70%">
+   <li><h4>애플리케이션 나눗셈 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_division.PNG?raw=true" width="70%" height="70%">
+    <li><h4>애플리케이션 나머지 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_mod.PNG?raw=true" width="70%" height="70%">
+   <li><h4>애플리케이션 자연로그 지수 연산(exp()) </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_expFunction.PNG?raw=true" width="70%" height="70%">
+    <li><h4>애플리케이션 상용로그 연산 (log) </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_commonLogFunction.PNG?raw=true" width="70%" height="70%">
+     <li><h4>애플리케이션 거듭제곱 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_involutionFunction.PNG?raw=true" width="70%" height="70%">
+      <li><h4>애플리케이션 팩토리얼 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_factorialFunction.PNG?raw=true" width="70%" height="70%">
+        <li><h4>애플리케이션 소수점 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_dot.PNG?raw=true" width="70%" height="70%">
+       <li><h4>애플리케이션 괄호 연산 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_Parenthesis.PNG?raw=true" width="70%" height="70%">
+        <li><h4>애플리케이션 Delete 기능 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_deleteFunction.PNG?raw=true" width="70%" height="70%">
+  <li><h4>애플리케이션 Reset 기능 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_resetFunction.PNG?raw=true" width="70%" height="70%">
+   <li><h4>애플리케이션 History 기능 </h4></li>
+  <img src="https://github.com/ksa-banana/Java_Programming/blob/master/image/App_History.PNG?raw=true" width="70%" height="70%">
  </ul>
