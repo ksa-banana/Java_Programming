@@ -1,4 +1,4 @@
-package com.example.calc3;
+﻿package com.example.calc3;
 
 public class Operation {
 
@@ -51,7 +51,7 @@ public class Operation {
 		if (x == 0) {
 			return 1;
 		}
-        elif (x <= 1) {
+        else if (x <= 1) {
             return 1;
         } else {
             return factorialFunction(x - 1)*x;
