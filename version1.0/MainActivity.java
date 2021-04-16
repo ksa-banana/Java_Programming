@@ -249,8 +249,10 @@ public class MainActivity extends AppCompatActivity {
 
                         break;
                     case R.id.btnDel:
-                        input = input.substring(0, input.length()-1);
-                        operExpression = input;
+                        if(input.length()-1>=0) {
+                            input = input.substring(0, input.length() - 1);
+                            operExpression = input;
+                        }
 
 
                         break;
@@ -288,14 +290,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
-
-
-
-
-
-
-
 
 }
