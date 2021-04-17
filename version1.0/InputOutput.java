@@ -31,7 +31,6 @@ public class InputOutput {
 
 
 
-
     void init() {
         if(!output.isEmpty()){
             output.clear();
@@ -64,7 +63,6 @@ public class InputOutput {
             else {
                 lastIndex = inputString.size()-1;
 
-
                 if(inputString.isEmpty() || isOperation(inputString.get(lastIndex))) {
                     inputString.add(c+"");
                 }
@@ -73,11 +71,7 @@ public class InputOutput {
                 }
             }
         }
-
-
-
         return priorityFunction();
-
     }
 
 
@@ -114,20 +108,13 @@ public class InputOutput {
                     while(!opStack.isEmpty() && opPriority.get(opStack.peek()) >= opPriority.get(s)) {
                         output.add(opStack.pop());
                     }
-
                     //우선순위가 낮거나 스택이 비어있으면 push
                     opStack.push(s);
-
                 }
             }
             else{
-
                 //피연산자일 경우
                 output.add(s);
-
-
-
-
             }
 
         }
@@ -146,88 +133,95 @@ public class InputOutput {
         Double num1, num2 = 0.0;
         Stack<String> numStack = new Stack<>();
         Operation operation = new Operation();
-
-
-
         for(int i=0; i<output.size(); i++ ){
             String s = output.get(i);
 
             if(isOperation(s)) {
                 switch(s) {
                     case "+":
-                        num2 = Double.parseDouble(numStack.pop());
-                        num1 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.plus(num1, num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>1) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = Double.parseDouble(numStack.pop());
+                            num1 = operation.plus(num1, num2);
+                            numStack.add(num1+"");
+                        }
                         break;
                     case "-":
-                        num2 = Double.parseDouble(numStack.pop());
-                        num1 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.minus(num1, num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>1) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = Double.parseDouble(numStack.pop());
+                            num1 = operation.minus(num1, num2);
+                            numStack.add(num1 + "");
+                        }
                         break;
                     case "*":
-                        num2 = Double.parseDouble(numStack.pop());
-                        num1 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.multiplication(num1, num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>1) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = Double.parseDouble(numStack.pop());
+                            num1 = operation.multiplication(num1, num2);
+                            numStack.add(num1 + "");
+                        }
                         break;
                     case "/":
-                        num2 = Double.parseDouble(numStack.pop());
-                        num1 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.division(num1, num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>1) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = Double.parseDouble(numStack.pop());
+                            num1 = operation.division(num1, num2);
+                            numStack.add(num1 + "");
+                        }
                         break;
                     case "m":
-                        num2 = Double.parseDouble(numStack.pop());
-                        num1 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.mod(num1, num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>1) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = Double.parseDouble(numStack.pop());
+                            num1 = operation.mod(num1, num2);
+                            numStack.add(num1 + "");
+                        }
                         break;
                     case "^":
-                        num2 = Double.parseDouble(numStack.pop());
-                        num1 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.involutionFunction(num1, num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>1) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = Double.parseDouble(numStack.pop());
+                            num1 = operation.involutionFunction(num1, num2);
+                            numStack.add(num1 + "");
+                        }
                         break;
                     case "l":
-                        num2 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.commonLogFunction(num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>0) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = operation.commonLogFunction(num2);
+                            numStack.add(num1 + "");
+                        }
                         break;
                     case "e":
-                        num2 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.expFunction(num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>0) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = operation.expFunction(num2);
+                            numStack.add(num1 + "");
+                        }
                         break;
                     case "!":
-                        num2 = Double.parseDouble(numStack.pop());
-
-                        num1 = operation.factorialFunction(num2);
-                        numStack.add(num1+"");
+                        if(numStack.size()>0) {
+                            num2 = Double.parseDouble(numStack.pop());
+                            num1 = operation.factorialFunction(num2);
+                            numStack.add(num1 + "");
+                        }
                         break;
-
                 }
-
             }
             else {
                 numStack.push(s);
             }
         }
-
-        System.out.print(numStack.get(0));
-
-        return Double.parseDouble(numStack.get(0));
-
+        if(!numStack.isEmpty()) {
+            System.out.print(numStack.get(0));
+            return Double.parseDouble(numStack.get(0));
+        }else{
+            return Double.parseDouble("0");
+        }
     }
+
+
 
 
     //연산자 여부
@@ -237,7 +231,4 @@ public class InputOutput {
         }
         return opPriority.containsKey(s);
     }
-
-
-
 }

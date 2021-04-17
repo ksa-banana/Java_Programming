@@ -28,10 +28,8 @@ public class Operation {
         return x%y;
     }
 
-
     // exp() 지수 연산
     public double expFunction(double x){
-
         return Math.exp(x);
     }
 
@@ -40,7 +38,6 @@ public class Operation {
         return Math.log10(x);
     }
 
-
     // 거듭제곱 연산
     public double involutionFunction(double x, double y) {
         return Math.pow(x,y);
@@ -48,12 +45,10 @@ public class Operation {
 
     // 팩토리얼 연산
     public double factorialFunction(double x) {
-
         if(x<=1) {
             return 1;
         }else {
             return factorialFunction(x - 1)*x;
         }
     }
-
 }
